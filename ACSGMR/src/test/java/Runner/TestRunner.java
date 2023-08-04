@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 
 
 	@RunWith(Cucumber.class)
-	@CucumberOptions(features = {"Features"}, 
+	@CucumberOptions(features = {"Features"},
 	                 glue = "stepdefinition",
 	                 monochrome = true,
 	                 plugin = { "json:target/cucumber.json",
@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 	                		 "rerun:Rerun/rerun1.txt" },
 	                 		
 
-	                 tags ="@ACS_GMR_Import")
+	                 tags ="@ACS_GMR_Admin")
 
 public class TestRunner {
 		
@@ -22,3 +22,5 @@ public class TestRunner {
 
 	
 	
+	
+

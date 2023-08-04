@@ -81,9 +81,9 @@ public class ACS_GMR_Admin {
 	Thread.sleep(2000);
 	
 	gmr.GmrHydRadioOKBtn.click();
-	Thread.sleep(2000);
+	Thread.sleep(4000);
 	
-	wm.JavascriptExecutorClick(driver, gmrAdmin.Admin);Thread.sleep(2000);
+	wm.JavascriptExecutorClick(driver, gmrAdmin.Admin);Thread.sleep(4000);
 	
 	Select dropdown = new Select(driver.findElement(By.id("ctl00_hldPage_drpCreditType")));  
 	dropdown.selectByVisibleText("Bank Transfer");
@@ -105,7 +105,7 @@ public class ACS_GMR_Admin {
 	Robot uploaddoc = new Robot();
 	uploaddoc.delay(2000);
 
-	StringSelection sss1 = new StringSelection("E:\\dummy1 documents\\pdf1.pdf");
+	StringSelection sss1 = new StringSelection("D:\\dummy documents\\pdf1.pdf");
 	Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sss1, null);
 
 	uploaddoc.keyPress(KeyEvent.VK_CONTROL);

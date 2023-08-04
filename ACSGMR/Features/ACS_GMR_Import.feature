@@ -23,10 +23,21 @@ Feature: Export > ACS-GMR-Import
 Background: Launch the ACS application and login the application ACS_GMR_Import
      When I login with "ACS USER" user given in "Login" sheet ACS_GMR_Import
 
- @ACS_GMR_Import
-   Scenario: create a direct shipment ACS_GMR_Import
+ @ACS_GMR_1Import
+   Scenario: create a direct shipment ACS_GMR_Import single BOE single VT.
    Given To verify whether user is able to create Direct Shipment from Add MAWB/HAWB screen ACS_GMR_Import
    Then I login with "ACS AIRLINE KALE" airline user given in "Login" sheet ACS_GMR_Import
    Then I logout with "ACS USER" airline user given in "Login" sheet for request status ACS_GMR_Import
-  # When I login with "ACS AADHYA" airline user given in "Login" sheet ACS_GMR_Import 
+   #When I login with "ACS AADHYA" airline user given in "Login" sheet ACS_GMR_Import 
+    
+    
+@ACS_GMR_2Import
+    Scenario: create a direct shipment ACS_GMR_Import single BOE multiple VT and multiple BOE single VT.
+    Given To verify whether user is able to create Direct Shipment from Add MAWB/HAWB screen ACS_GMR_Import
+    Then I login with "ACS AIRLINE KALE" airline user given in "Login" sheet ACS_GMR_Import
+    Then logout with airline ane login with FF.
+    
+ @ACS_GMR_3Import  
+    Scenario: create a direct shipment ACS_GMR_Import.
+    Given To verify can submit any documentation if previous one is pending.
     
