@@ -353,4 +353,29 @@ public class TestDataReader {
 		Password = read.GetCellDataX(LoginDetailsSheetName, "Password", 10);
 		
 	}
+	public static void FFlogin() throws Throwable
+	{
+		Username = read.GetCellDataX(LoginDetailsSheetName, "Username", 8);
+		Password = read.GetCellDataX(LoginDetailsSheetName, "Password", 8);
+		
+	}
+	public static void Airline() throws Throwable
+	{
+		Username = read.GetCellDataX(LoginDetailsSheetName, "Username", 9);
+		Password = read.GetCellDataX(LoginDetailsSheetName, "Password", 9);
+		
+	}
+	public static void AWBno() throws Throwable
+	{
+		Username = read.GetCellDataX(LoginDetailsSheetName, "Username", 11);
+		
+		
+	}
+	public static void TransactionPassword() throws Throwable
+	{
+		Username = read.GetCellDataX(LoginDetailsSheetName, "Username", 12);
+		
+	}
+	
+	
 }

@@ -1102,4 +1102,7 @@ public class ACS_GMR_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_btnClose']")
 	public WebElement CopyAWBConfirmationYesBtnQuickASI;
 	
+	@FindBy(xpath = "//*[@class='.rowfy-addrow']")
+	public WebElement vehicaltokenplusbtn ;
+	
 }

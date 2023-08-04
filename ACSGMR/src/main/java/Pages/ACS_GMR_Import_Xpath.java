@@ -178,6 +178,8 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_btnSaveAwb']")
 	public WebElement GeneratetokenBtn;
 	
+	
+	
 	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[9]/div/div/div[3]/input")
 	public WebElement OKbtn;
 	
@@ -421,6 +423,82 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	
 	@FindBy(xpath = "/html/body/form/div[4]/div[1]/div[2]/div/ul/li[6]/ul/li[2]/a")
 	public WebElement FF;
+	
+	@FindBy(xpath = "//*[@class='.rowfy-addrow']")
+	public WebElement vehicaltokenplusbtn ;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[7]/div/div/div/div[3]/div/table/tbody/tr[2]/td[2]/input")
+	public WebElement Vehicleno2;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[7]/div/div/div/div[3]/div/table/tbody/tr[2]/td[3]/input")
+	public WebElement Driverlicenseno2 ;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[7]/div/div/div/div[3]/div/table/tbody/tr[2]/td[4]/input")
+	public WebElement Drivername2;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[7]/div/div/div/div[3]/div/table/tbody/tr[2]/td[5]/input")
+	public WebElement Drivermobno2 ;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[7]/div/div/div/div[3]/div/table/tbody/tr[2]/td[6]/input")
+	public WebElement Agentmobno2;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[7]/div/div/div/div[3]/div/table/tbody/tr[1]/td[7]/input")
+	public WebElement NoP1 ;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[7]/div/div/div/div[3]/div/table/tbody/tr[2]/td[7]/input")
+	public WebElement NoP2;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[7]/div/div/div/div[3]/div/table/tbody/tr[1]/td[8]/input")
+	public WebElement Grosswt1 ;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[2]/div/div[2]/div/div[2]/fieldset/div[2]/div[2]/div/table/tbody/tr[2]/td[24]/span/input")
+	public WebElement Vehicletokencheckbox;
+	
+	@FindBy(xpath = "//*[@id='ctl00_hldPage_btnCancelToken']")
+	public WebElement Cancelvehicletokentab ;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[11]/div/div/div[3]/input")
+	public WebElement Cancelokmsg ;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[2]/div/div[2]/div/div[2]/fieldset/div[3]/div/div[2]/div[3]/a/span/input")
+	public WebElement Generateatoken ;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[7]/div/div/div/div[3]/div/table/tbody/tr[2]/td[8]/input")
+	public WebElement Grosswt2 ;
+	
+	
+	@FindBy(xpath = "//*[@id='ctl00_hldPage_grdMAWB_ctl02_lnkVTNo']")
+	public WebElement vehicletokendonesign ;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[7]/div/div/div/div[2]/div/input")
+	public WebElement AddShipmentTab ;
+	
+	@FindBy(xpath = "//*[@id='ctl00_hldPage_grdSBWiseShipments_ctl02_chkRecord']")
+	public WebElement firstaddshipchkbox ;
+	
+	@FindBy(xpath = "//*[@id='ctl00_hldPage_btnAssign']")
+	public WebElement Addbtn ;
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[2]/div/div[2]/div/div[2]/fieldset/div[2]/div[2]/div/table/tbody/tr[2]/td[15]/input[1]")
+	public WebElement DisabledWtVarification ;
+	
+	@FindBy(xpath = "//*[@id='ctl00_hldPage_grdMAWB_ctl02_btnwtVerification']")
+	public WebElement EnableWtVarification ;
+	
+	
+	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[2]/div/div[2]/div/div[2]/fieldset/div[2]/div[2]/div/table/tbody/tr[2]/td[16]/input[1]")
+	public WebElement DisabledConsolDo ;
+	
+	@FindBy(xpath = "//*[@id='ctl00_hldPage_grdMAWB_ctl02_btnPickOrder2']")
+	public WebElement DirectShipPickorderTab;
+	
+	@FindBy(xpath = "//*[@id='ctl00_hldPage_grdMAWB_ctl02_btnEDocket']")
+	public WebElement DirecteDocketTab;
+	
+	
+	
+	
+	
 	
 	
 	
