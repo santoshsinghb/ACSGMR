@@ -224,6 +224,13 @@ public class ACS_GMR_Import {
 		
 		wm.JavascriptExecutorClick(driver, gmrImport.ShipmentDetailscheckbox);Thread.sleep(4000);
 		
+		
+	}
+		@Then("user should be able to Approve the Airline DO request from Kale Airline account")
+		public void to_verify_whether_the_user_is_able_to_approve_the_airline_do_request_from_kale_airline_account() throws InterruptedException {
+		    
+		
+		
 		wm.JavascriptExecutorClick(driver, gmrImport.ApproveDeliveryOredr);Thread.sleep(4000);
 		wm.JavascriptExecutorClick(driver, gmrImport.ApproveDeliveryOredrpopup);Thread.sleep(4000);
 		
@@ -259,6 +266,11 @@ public class ACS_GMR_Import {
 			//gmrImport.Imports.click();Thread.sleep(8000);
 			wm.JavascriptExecutorClick(driver, gmrImport.Imports);Thread.sleep(4000);
 			Thread.sleep(8000);
+		}
+		@Then("To verify whether the user is able to do Weight verification of Consol Shipment")
+			public void to_verify_whether_the_user_is_able_to_do_weight_verification_of_consol_shipment() throws Throwable {
+			    
+			
 			
 		wm.JavascriptExecutorClick(driver, gmrImport.WeightVerification);Thread.sleep(4000);
 		
@@ -356,6 +368,13 @@ public class ACS_GMR_Import {
 		wm.JavascriptExecutorClick(driver, gmrImport.wtVerificationsubmit);Thread.sleep(4000);
 		
 		wm.JavascriptExecutorClick(driver, gmrImport.wtVerificationsubmitpopup);Thread.sleep(4000);
+		
+		}
+		
+    @Then("user should be able to do Consol DO and assign the shipment to another CB")
+		public void to_verify_whether_the_user_is_able_to_do_consol_do_and_assign_the_shipment_to_another_cb() throws Throwable {
+		    
+		
 			
 		wm.JavascriptExecutorClick(driver, gmrImport.ConsoleDoRevoke);Thread.sleep(8000);
 		
@@ -377,8 +396,11 @@ public class ACS_GMR_Import {
 	    gmrImport.FFlogOutArrow.click();Thread.sleep(4000);
 	    gmrImport.FFlogOutTab.click();Thread.sleep(4000);
 	    
-	   
-	    
+    }
+	  @Then("user should be able to do BoE for Direct\\/Consol Shipment")
+	  public void to_verify_whether_the_user_is_able_to_do_bo_e_for_direct_consol_shipment() throws Throwable {
+	       
+	     
 	    // -------------------CB login------------------BOE--------------------->
 	   
 	    //gmrImport.CloseBtn.click();Thread.sleep(4000);
@@ -465,8 +487,12 @@ public class ACS_GMR_Import {
 			wm.JavascriptExecutorClick(driver, gmrImport.BillEntryDetailsSaveBtn);Thread.sleep(4000);
 			wm.JavascriptExecutorClick(driver, gmrImport.BillEntryBackbtn);Thread.sleep(4000);
 			wm.JavascriptExecutorClick(driver, gmrImport.SavemsgOkbtn);Thread.sleep(4000);
+	  }
 	
-		
+		@Then("user should be able to do Pick Order for Direct\\/Consol Shipment")
+		public void to_verify_whether_the_user_is_able_to_do_pick_order_for_direct_consol_shipment() throws Throwable {
+			    
+			
 			
 			//-----------------------------Pick order------------------------------------------	
 			
@@ -475,8 +501,12 @@ public class ACS_GMR_Import {
 			gmrImport.Remarkstxtbox.sendKeys("Examination");Thread.sleep(4000);
 			wm.JavascriptExecutorClick(driver, gmrImport.PickOrdersavebtn);Thread.sleep(4000);
 			wm.JavascriptExecutorClick(driver, gmrImport.PickOrdersaveOkbtn);Thread.sleep(4000);
+		}
 			
 			
+	    @When("user should be able to do OOC for Direct\\/Consol Shipment")
+		public void to_verify_whether_the_user_is_able_to_do_ooc_for_direct_consol_shipment() throws Throwable {
+			   
 			
 			//----------------OoC-----------------------------
 			
@@ -522,7 +552,11 @@ public class ACS_GMR_Import {
 		         // Action action11  = ob11.build();
 		         // action11.perform();
 		         // Thread.sleep(4000);
-		
+	  }
+				
+		@Then("user should be able to BoE ASI and View the ACS Receipt for Direct\\/Consol Shipment")
+		public void to_verify_whether_the_user_is_able_to_bo_e_asi_and_view_the_acs_receipt_for_direct_consol_shipment() throws Throwable {
+				   
 				
 				//---------------BOE ASI-------------
 		         
@@ -531,8 +565,12 @@ public class ACS_GMR_Import {
 				wm.JavascriptExecutorClick(driver, gmrImport.Proceedbtn);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.BOEASIsaveOKbtn);Thread.sleep(4000);
 				
-				
-				
+		}	
+		@Then("user should be able to assign the shipment to Consignee to create TSP for Direct\\/Consol shipment")
+		public void to_check_if_user_is_able_to_assign_the_shipment_to_consignee_to_create_tsp_for_direct_consol_shipment() throws Throwable {
+		    
+		
+					
 				//--------------------TSP--------------------------------
 				 
 				wm.JavascriptExecutorClick(driver, gmrImport.TSPicon);Thread.sleep(4000);
@@ -554,8 +592,11 @@ public class ACS_GMR_Import {
 				wm.JavascriptExecutorClick(driver, gmrImport.Yesbtn);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.GenerateTSPYesbtn);Thread.sleep(4000);
 				
-			
-	
+		}	
+	@When("user should be able to create single VT for single BoE  from TSP pop up")
+		public void to_check_if_user_is_able_to_create_single_vt_for_single_bo_e_from_tsp_pop_up() throws InterruptedException {
+				    
+				
 		//<<<<------------------	Generate Token ---------------------->>>>>>>	
 				
 				
@@ -572,16 +613,28 @@ public class ACS_GMR_Import {
 	gmrImport.DriverMobileNo.sendKeys("1234567891");Thread.sleep(4000);
 	
 	gmrImport.AgentMobileNo.sendKeys("2234567891");Thread.sleep(4000);
+	}
 	
+ @When("user should be able to generate the token on click of Generate Token button")
+ public void to_verify_whether_user_is_able_to_generate_the_token_on_click_of_generate_token_button() throws InterruptedException {
+	    
 	wm.JavascriptExecutorClick(driver, gmrImport.GeneratetokenBtn);Thread.sleep(4000);
 	
 	gmrImport.OKbtn.click();Thread.sleep(4000);
 	//gmrImport.VehicleDetailsAdd.click();Thread.sleep(4000);
+	}
+	
+ @Then("user should be able to view Complete icon for Dock In\\/Dock Out on Track and Trace screen when the CTO perform Dock In\\/Dock Out activity.")
+ public void to_verify_whether_the_user_is_able_to_view_complete_icon_for_dock_in_dock_out_on_track_and_trace_screen_when_the_cto_perform_dock_in_dock_out_activity() throws InterruptedException {
+	  
 	
 	
 	//----------------------------E-Docket-----------------------------------------------------------
 	
 	gmrImport.eDocketIcon.click();Thread.sleep(4000);
+ }
+	@Then("To check whether the system displays proper status for ARR,RCF,NFD,ADO,DI,Consol DO, BoE, RFE,FFE,OOC, TSP,VT,GD with proper date and timestamp.")
+	public void to_check_whether_the_system_displays_proper_status_for_arr_rcf_nfd_ado_di_consol_do_bo_e_rfe_ffe_ooc_tsp_vt_gd_with_proper_date_and_timestamp() throws InterruptedException {
 	gmrImport.close.click();Thread.sleep(4000);
 	
 	
@@ -595,6 +648,11 @@ public class ACS_GMR_Import {
 	//Mouseover on an element
 	tracktrace.moveToElement(gmrImport.TrackTrace).perform();
 	Thread.sleep(4000);
+	}
+	@Then("user should be able to clicks on AWB number and it should display its  details and correct status in its respective fields.")
+	public void to_check_when_user_clicks_on_awb_number_and_it_should_display_its_details_and_correct_status_in_its_respective_fields() throws InterruptedException {
+	    
+	
 	
 	gmrImport.TrackTrace.click();Thread.sleep(4000);
 	
@@ -604,6 +662,11 @@ public class ACS_GMR_Import {
 	Thread.sleep(4000);
 	
 	gmrImport.GSTInfo.click();Thread.sleep(4000);
+	}
+	@Then("user should be able to View the Transaction Report From Sub-menu of Reports")
+	public void to_verify_whether_user_is_able_to_view_the_transaction_report_from_sub_menu_of_reports() throws InterruptedException {
+	    
+	
 	
 	Actions reports = new Actions(driver);
 	//Mouseover on an element
@@ -617,10 +680,17 @@ public class ACS_GMR_Import {
 	
 	gmrImport.ExportToExcelTransactionReport.click();Thread.sleep(4000);
 	
+}
 	
+	@When("user should be able to View the Dwell Time Report From Sub-menu of Reports")
+	public void to_verify_whether_user_is_able_to_view_the_dwell_time_report_from_sub_menu_of_reports() throws InterruptedException {
 	//Mouseover on an element
+	Actions reports = new Actions(driver);
 	reports.moveToElement(gmrImport.Reports).perform();
 	Thread.sleep(4000);
+	
+	    
+	
 	
 	gmrImport.DwellTimeReport.click();Thread.sleep(4000);
 	
@@ -628,6 +698,12 @@ public class ACS_GMR_Import {
 	
 	reports.moveToElement(gmrImport.Reports).perform();
 	Thread.sleep(4000);
+	}
+	
+	@Then("user should be able to View the Tonnage Report")
+	public void to_verify_whether_user_is_able_to_view_the_tonnage_report() throws InterruptedException {
+	   
+	
 	
 	gmrImport.TonnageReport.click();Thread.sleep(4000);
 	
@@ -635,6 +711,14 @@ public class ACS_GMR_Import {
 	gmrImport.TonnageReportAirport.sendKeys("HYD");Thread.sleep(4000);
 	
 	gmrImport.TonnageReportExportToExcel.click();Thread.sleep(4000);
+	
+	}
+   
+	
+	@Then("user should be able to release and revoke DO in bulk.")
+   public void to_verify_whether_user_is_able_to_release_and_revoke_do_in_bulk() throws InterruptedException {
+	
+
 	
 	Actions ecustom = new Actions(driver);
 	//Mouseover on an element
