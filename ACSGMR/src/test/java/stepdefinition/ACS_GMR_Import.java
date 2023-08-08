@@ -267,7 +267,7 @@ public class ACS_GMR_Import {
 			wm.JavascriptExecutorClick(driver, gmrImport.Imports);Thread.sleep(4000);
 			Thread.sleep(8000);
 		}
-		@Then("To verify whether the user is able to do Weight verification of Consol Shipment")
+		@Then("user should be able to do Weight verification of Consol Shipment")
 			public void to_verify_whether_the_user_is_able_to_do_weight_verification_of_consol_shipment() throws Throwable {
 			    
 			
@@ -756,7 +756,7 @@ public class ACS_GMR_Import {
 		    wm.JavascriptExecutorClick(driver, gmrImport.Imports);Thread.sleep(4000);
 			Thread.sleep(4000);
 			
-		wm.JavascriptExecutorClick(driver, gmrImport.WeightVerification);Thread.sleep(4000);
+		/*wm.JavascriptExecutorClick(driver, gmrImport.WeightVerification);Thread.sleep(4000);
 		
 		wm.JavascriptExecutorClick(driver, gmrImport.WeightVerificationUploadDocs);Thread.sleep(4000);
 		
@@ -1042,10 +1042,11 @@ public class ACS_GMR_Import {
 			    gmrImport.TransactionPasswordtxtbox.sendKeys(Username); Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.TSPpaynowbtn);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.Yesbtn);Thread.sleep(4000);
-				wm.JavascriptExecutorClick(driver, gmrImport.GenerateTSPYesbtn);Thread.sleep(4000);
+				wm.JavascriptExecutorClick(driver, gmrImport.GenerateTSPYesbtn);Thread.sleep(4000);*/
 				
-			
-	
+		}	
+	@Then("To check if user is able to create multiple VT for single BoE  from Shipment list page")
+public void to_check_if_user_is_able_to_create_multiple_vt_for_single_bo_e_from_shipment_list_page() throws InterruptedException {
 		//<<<<------------------	Multiple Generate Token ---------------------->>>>>>>	
 				
 		Thread.sleep(4000);		
@@ -1085,6 +1086,10 @@ public class ACS_GMR_Import {
 	wm.JavascriptExecutorClick(driver, gmrImport.GeneratetokenBtn);Thread.sleep(4000);
 	gmrImport.OKbtn.click();Thread.sleep(4000);
 	
+	}
+	@When("To verify whether user is able to Cancel the token on click of Cancel Token Button from VCT screen")
+public void to_verify_whether_user_is_able_to_cancel_the_token_on_click_of_cancel_token_button_from_vct_screen() throws InterruptedException {
+	
 	wm.JavascriptExecutorClick(driver, gmrImport.vehicletokendonesign);Thread.sleep(4000);
 	wm.JavascriptExecutorClick(driver, gmrImport.Cancelvehicletokentab);Thread.sleep(4000);
 	wm.JavascriptExecutorClick(driver, gmrImport.Cancelokmsg);Thread.sleep(4000);
@@ -1097,8 +1102,9 @@ public class ACS_GMR_Import {
    // gmrImport.NoP1.sendKeys("3");
 	
 	gmrImport.Grosswt1.sendKeys("120");
-	
-	
+	}
+	@Then("To check if user is able to create single VT  for multiple BoE  from shipment list page")
+public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_shipment_list_page() throws InterruptedException {
 	//-------------------multiple BOE--------------------------------
 	
 	
@@ -1197,8 +1203,14 @@ public class ACS_GMR_Import {
 
 		
 
-		@When("To verify can submit any documentation if previous one is pending.")
-		public void to_verify_can_submit_any_documentation_if_previous_one_is_pending() throws Throwable {
+	
+	@Given("To verify whether user is able to create Direct Shipment from Add MAWB screen ACS_GMR_Import")
+	public void to_verify_whether_user_is_able_to_create_direct_shipment_from_add_mawb_screen_acs_gmr_import() throws Throwable {
+	    
+	
+
+
+
 			gmr.AllRadioBtn.click();
 			Thread.sleep(4000);
 			
@@ -1283,7 +1295,7 @@ public class ACS_GMR_Import {
 			
 			
 			
-			gmrImport.AirlinrDo.click();Thread.sleep(4000);
+			/*gmrImport.AirlinrDo.click();Thread.sleep(4000);
 			
 			
 			
@@ -1308,8 +1320,11 @@ public class ACS_GMR_Import {
 			wm.JavascriptExecutorClick(driver, gmrImport.ApproveDeliveryOredr);Thread.sleep(4000);
 			wm.JavascriptExecutorClick(driver, gmrImport.ApproveDeliveryOredrpopup);Thread.sleep(4000);
 			wm.JavascriptExecutorClick(driver, gmr.AirlineLogoutArrow);Thread.sleep(4000);
-			wm.JavascriptExecutorClick(driver, gmr.AirlineLogout);Thread.sleep(4000);
-			
+			wm.JavascriptExecutorClick(driver, gmr.AirlineLogout);Thread.sleep(4000);*/
+	}
+		@When("user should be able to do BoE for Direct\\/Consol Shipment for direct shipment")
+		public void user_should_be_able_to_do_bo_e_for_direct_consol_shipment_for_direct_shipment() throws Throwable {
+			    
 			
 			TestDataReader.FFlogin();
 		    gmrImport.Usernametxtbox.sendKeys(Username); Thread.sleep(4000);
@@ -1383,8 +1398,9 @@ public class ACS_GMR_Import {
 				wm.JavascriptExecutorClick(driver, gmrImport.BillEntryDetailsSaveBtn);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.BillEntryBackbtn);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.SavemsgOkbtn);Thread.sleep(4000);
-		
-			
+		}
+			@Then("user should be able to do Pick Order for Direct\\/Consol Shipment for direct shipment.")
+			public void user_should_be_able_to_do_pick_order_for_direct_consol_shipment_for_direct_shipment() throws InterruptedException {	
 				
 				//-----------------------------Pick order------------------------------------------	
 				
@@ -1393,9 +1409,10 @@ public class ACS_GMR_Import {
 				gmrImport.Remarkstxtbox.sendKeys("Examination");Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.PickOrdersavebtn);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.PickOrdersaveOkbtn);Thread.sleep(4000);
+	   }
 				
-				
-				
+			@When("user should be able to do OOC for Direct\\/Consol Shipment for direct shipment.")
+			public void user_should_be_able_to_do_ooc_for_direct_consol_shipment_for_direct_shipment() throws InterruptedException, AWTException {
 				//----------------OoC-----------------------------
 				
 //				
@@ -1440,14 +1457,18 @@ public class ACS_GMR_Import {
 			         // Action action11  = ob11.build();
 			         // action11.perform();
 			         // Thread.sleep(4000);
+		}
+				@Then("user should be able to BoE ASI and View the ACS Receipt for Direct\\/Consol Shipment for direct shipment.")
+				public void user_should_be_able_to_bo_e_asi_and_view_the_acs_receipt_for_direct_consol_shipment_for_direct_shipment() throws InterruptedException {
 					
 		//	------------------------BOE ASI--------------------------------------------------
 					
 					wm.JavascriptExecutorClick(driver, gmrImport.BOEASIicon);Thread.sleep(4000);
 					wm.JavascriptExecutorClick(driver, gmrImport.Proceedbtn);Thread.sleep(4000);
 					wm.JavascriptExecutorClick(driver, gmrImport.BOEASIsaveOKbtn);Thread.sleep(4000);
-					
-					
+	    }	
+			    @Then("To check if user can create TSP for Direct shipment as self assign.")
+				public void to_check_if_user_can_create_tsp_for_direct_shipment_as_self_assign() throws Throwable {	
 					
 		//-------------------------TSP-------------------------------------------------------------			
 					
@@ -1477,7 +1498,7 @@ public class ACS_GMR_Import {
 					
 //	    wm.JavascriptExecutorClick(driver, gmrImport.GeneratetokenTab);Thread.sleep(4000);
 					
-		gmrImport.VehicleNo.sendKeys("MH127896");Thread.sleep(4000);
+	/*	gmrImport.VehicleNo.sendKeys("MH127896");Thread.sleep(4000);
 		
 		gmrImport.DriverLicenseNo.sendKeys("MH7896");Thread.sleep(4000);
 		
@@ -1497,14 +1518,16 @@ public class ACS_GMR_Import {
 		//----------------------------E-Docket-----------------------------------------------------------
 		
 		gmrImport.DirecteDocketTab.click();Thread.sleep(4000);
-		gmrImport.close.click();Thread.sleep(4000);
+		gmrImport.close.click();Thread.sleep(4000);*/
 		
 			
 		
 		
 			
-		}
+		
 
 
 
+}
+					
 }
