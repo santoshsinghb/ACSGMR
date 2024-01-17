@@ -55,5 +55,61 @@ public class ACS_GMR_Admin_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_btnExcel']")
 	public WebElement ExportToPDF;
 	
+	@FindBy(xpath = "//*[@class='ui-datepicker-trigger']")
+	public WebElement calenderIcon ;
+	
+	@FindBy(xpath = "//*[@class='ui-icon ui-icon-circle-triangle-w']")
+	public WebElement calenderArrow ;
+	
+	@FindBy(xpath = "//*[@class='ui-state-default']")
+	public WebElement firstjune ;
+	
+	
+	
+	@FindBy(xpath = "//*[text()='Advance Receipts']")
+	public WebElement AdvanceReciept ;
+	
+    @FindBy(xpath = "//*[@class='select100per']")
+	public WebElement creditTypedropdown ;
+    
+    @FindBy(xpath = "//*[text()='Cheque/DD/PO']")
+	public WebElement ChequeOption ;
+    
+    @FindBy(xpath = "//*[text()='Bank Transfer']")
+	public WebElement BankTransferOption ;
+    
+    @FindBy(xpath = "//*[text()='CASH']")
+	public WebElement CashOption ;
+    
+    @FindBy(xpath = "//*[@id='ctl00_hldPage_btnsearch']")
+   	public WebElement SearchBtn ;
+    
+    @FindBy(xpath = "//*[@id= 'ctl00_hldPage_grdData_ctl02_updVwRecpt']")
+   	public WebElement viewRecieptLink ;
+    
+    @FindBy(xpath = "/html/body/pdf-viewer//viewer-toolbar//div/div[3]/viewer-download-controls//cr-icon-button")
+   	public WebElement downloadbtn ;
+    
+    @FindBy(xpath = "//*[text()='Refund Receipts']")
+	public WebElement RefundReciept ;
+    
+    @FindBy(xpath = "//*[text()='CTO Ledger']")
+	public WebElement CTOLedger ;
+    
+    @FindBy(xpath = "//*[@id='ctl00_hldPage_drppda']")
+	public WebElement SelectCTOdropdown ;
+    
+    @FindBy(xpath = "//*[text()='GMR HYD']")
+	public WebElement GMRHYD ;
+    
+    @FindBy(xpath = "//*[@class='ui-state-default ui-state-active']")
+	public WebElement septdate ;
+    
+    
+    
+    
+    
+	
+    
 	
 }

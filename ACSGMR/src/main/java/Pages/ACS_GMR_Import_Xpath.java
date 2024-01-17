@@ -265,7 +265,7 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_btnDOSubmit']")
 	public WebElement ConsoleDoSubmit;
 	
-	@FindBy(xpath = "/html/body/form/div[4]/div[8]/div/div/div[3]/input")
+	@FindBy(xpath = "/html/body/form/div[4]/div[12]/div/div/div[3]/input")
 	public WebElement ConsoleDoSubmittedSuccessfully;
 	
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_grdMAWB_ctl02_HyperLinkSB']")
@@ -277,7 +277,7 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "//*[@class='ui-datepicker-trigger']")
 	public WebElement BoEDateCalender;
 	
-	@FindBy(xpath = "//*[@class=' ui-datepicker-days-cell-over  ui-datepicker-today']")
+	@FindBy(xpath = "//*[@class=' ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today']")
 	public WebElement TodayDate;
 	
 	@FindBy(xpath = "//*[@id='txtCAV']")
@@ -298,7 +298,7 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_btnUploadSave']")
 	public WebElement UploadBoEBtnChooseFile;
 	
-	@FindBy(xpath = "/html/body/form/div[10]/div[3]/div/button")
+	@FindBy(xpath = "(//*[@class='ui-button ui-corner-all ui-widget'])[3]")
 	public WebElement UploadBoEBtnChooseFileCloseBtn;
 	
 	@FindBy(xpath = "/html/body/form/div[4]/div[1]/div[3]/div/div[2]/div")
@@ -334,7 +334,7 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[2]/div/div[2]/div/div[2]/fieldset/div[2]/div[2]/div/table/tbody/tr[2]/td[19]/a")
 	public WebElement PickOrderSubmitbtn;
 	
-	@FindBy(xpath = "//*[@id='ctl00_hldPage_txtPieceforExam']")
+	@FindBy(xpath = "(//*[@class='createbol-txtbox'])[4]")
 	public WebElement PieceForExaminationtxtbox;
 	
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_txtRemarks']")
@@ -361,16 +361,16 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_btnUploadSave']")
 	public WebElement Oocuploadbtn;
 	
-	@FindBy(xpath = "/html/body/form/div[10]/div[3]/div/button")
+	@FindBy(xpath = "/html/body/form/div[8]/div[3]/div/button")
 	public WebElement OocUploaddocClosebtn;
 	
-	@FindBy(xpath = "//*[@class=' ui-datepicker-days-cell-over  ui-datepicker-today']")
+	@FindBy(xpath = "//*[@class=' ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today']")
 	public WebElement Ooctodaydate;
 	
 	@FindBy(xpath = "//*[@id='btnSaveAWB']")
 	public WebElement Oocsavebtn;
 	
-	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[2]/div/div/div[3]/input")
+	@FindBy(xpath = "(//*[@class='green-button-white-text'])[1]")
 	public WebElement OocsavemsgOkbtn;
 	
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_grdMAWB_ctl02_imgASISBStatus']")
@@ -387,6 +387,13 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_btnProceedTP']")
 	public WebElement TSPproceedbtn;
+	
+	
+	@FindBy(xpath = "//*[@id='ctl00_hldPage_btnInteAppProceed']")
+	public WebElement ShipmentIntegrationApproacgproceedbtn;
+	
+	
+	
 	
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_ddlTSPCommodityGroup']")
 	public WebElement CommodityTypedropdown;
@@ -409,6 +416,12 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_btnTSPPay']")
 	public WebElement TSPpaynowbtn;
 	
+	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[5]/div/div/div[3]/button")
+	public WebElement OK;
+	
+	
+	
+	
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_btnTSPConfirm']")
 	public WebElement Yesbtn;
 	
@@ -418,7 +431,7 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[2]/div/div[2]/div/div[2]/fieldset/div[2]/div[2]/div/table/tbody/tr[2]/td[28]/input[1]")
 	public WebElement eDocketIcon;
 	
-	@FindBy(xpath = "/html/body/form/div[11]/div[3]/div/button")
+	@FindBy(xpath = "/html/body/form/div[12]/div[3]/div/button")
 	public WebElement close;
 	
 	@FindBy(xpath = "/html/body/form/div[4]/div[1]/div[2]/div/ul/li[6]/ul/li[2]/a")
@@ -494,6 +507,9 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_grdMAWB_ctl02_btnEDocket']")
 	public WebElement DirecteDocketTab;
+	
+	
+	
 	
 	
 	
