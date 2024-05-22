@@ -345,6 +345,12 @@ public class TestDataReader {
 		String AWBNo_Direct_NonBonded = read.GetCellDataX(ACSGMR_Export, "AWBNo_Direct_NonBonded", 1);
 		return AWBNo_Direct_NonBonded;
 	}
+	
+	public static String AWBNo_Direct_Practice()
+	{
+		String AWBNo_Direct_Practice = read.GetCellDataX(ACSGMR_Export, "AWBNo_Direct_Practice", 1);
+		return AWBNo_Direct_Practice;
+	}
 
 	
 	public static void CBloginAadhya() throws Throwable

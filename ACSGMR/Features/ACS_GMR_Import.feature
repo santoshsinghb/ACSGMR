@@ -28,8 +28,8 @@ Background: Launch the ACS application and login the application ACS_GMR_Import
    Given To verify whether user is able to create Direct Shipment from Add MAWB/HAWB screen ACS_GMR_Import
   Then I login with "ACS AIRLINE KALE" airline user given in "Login" sheet ACS_GMR_Import
    Then user should be able to Approve the Airline DO request from Kale Airline account
-   ###Then I logout with "ACS USER" airline user given in "Login" sheet for request status ACS_GMR_Import
-  ##When I login with "ACS AADHYA" airline user given in "Login" sheet ACS_GMR_Import 
+   Then I logout with "ACS USER" airline user given in "Login" sheet for request status ACS_GMR_Import
+  When I login with "AADHYA USER" airline user given in "Login" sheet ACS_GMR_Import 
    
    
   And user should be able to do Weight verification of Consol Shipment
@@ -76,14 +76,14 @@ Background: Launch the ACS application and login the application ACS_GMR_Import
    Then To check if user is able to create multiple VT for single BoE  from Shipment list page
    When To verify whether user is able to Cancel the token on click of Cancel Token Button from VCT screen
    Then To check if user is able to create single VT  for multiple BoE  from shipment list page
-   ###Then user should be able to view Complete icon for Dock In/Dock Out on Track and Trace screen when the CTO perform Dock In/Dock Out activity.
-  #When To verify whether the user is able to View Partial Complete icon for Dock In/Dock Out on Track and Trace screen when the CTO perform Dock In/Dock Out activity for 1 VT out of 2 VT.
-   ###And To check whether the system displays proper status for ARR,RCF,NFD,ADO,DI,Consol DO, BoE, RFE,FFE,OOC, TSP,VT,GD with proper date and timestamp.
-   ###Then user should be able tor clicks on AWB number and it should display its  details and correct status in its respective fields.
-  ### Then user should be able to View the Transaction Report From Sub-menu of Reports
-   ###When user should be able to View the Dwell Time Report From Sub-menu of Reports
-   ###Then user should be able to View the Tonnage Report
-   ###Then user should be able to release and revoke DO in bulk.
+   Then user should be able to view Complete icon for Dock In/Dock Out on Track and Trace screen when the CTO perform Dock In/Dock Out activity.
+  When To verify whether the user is able to View Partial Complete icon for Dock In/Dock Out on Track and Trace screen when the CTO perform Dock In/Dock Out activity for 1 VT out of 2 VT.
+   And To check whether the system displays proper status for ARR,RCF,NFD,ADO,DI,Consol DO, BoE, RFE,FFE,OOC, TSP,VT,GD with proper date and timestamp.
+   Then user should be able tor clicks on AWB number and it should display its  details and correct status in its respective fields.
+   Then user should be able to View the Transaction Report From Sub-menu of Reports
+   When user should be able to View the Dwell Time Report From Sub-menu of Reports
+   Then user should be able to View the Tonnage Report
+   Then user should be able to release and revoke DO in bulk.
    
     
  @ACS_GMR_3Import  
@@ -96,8 +96,8 @@ Background: Launch the ACS application and login the application ACS_GMR_Import
    When user should be able to do OOC for Direct/Consol Shipment for direct shipment.
    Then user should be able to BoE ASI and View the ACS Receipt for Direct/Consol Shipment for direct shipment.
    And To check if user can create TSP for Direct shipment as self assign.
-  # When user should be able to create single VT for single BoE  from TSP pop up
-  #  When user should be able to generate the token on click of Generate Token button
-   # Then user should be able to view Complete icon for Dock In/Dock Out on Track and Trace screen when the CTO perform Dock In/Dock Out activity.
-    ##Given To verify can submit any documentation if previous one is pending.
+   When user should be able to create single VT for single BoE  from TSP pop up
+    When user should be able to generate the token on click of Generate Token button
+    Then user should be able to view Complete icon for Dock In/Dock Out on Track and Trace screen when the CTO perform Dock In/Dock Out activity.
+    #Given To verify can submit any documentation if previous one is pending.
     

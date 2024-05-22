@@ -79,11 +79,11 @@ public class ACS_GMR_Import {
 	@Given("^To verify whether user is able to create Direct Shipment from Add MAWB/HAWB screen ACS_GMR_Import$")
 	public void To_verify_whether_user_is_able_to_create_Direct_Shipment_from_Add_MAWB_HAWB_screen_ACS_GMR_Import() throws Throwable {
 
-	//gmr.AllRadioBtn.click();
-	//Thread.sleep(4000);
+	gmr.AllRadioBtn.click();
+	Thread.sleep(4000);
 	
-	//gmr.GmrHydRadioOKBtn.click();
-	//Thread.sleep(4000);
+	gmr.GmrHydRadioOKBtn.click();
+	Thread.sleep(4000);
 	
 	wm.JavascriptExecutorClick(driver, gmrImport.Imports);Thread.sleep(4000);
 	
@@ -195,7 +195,7 @@ public class ACS_GMR_Import {
 	@Then("I login with {string} airline user given in {string} sheet ACS_GMR_Import")
 	public void i_login_with_airline_user_given_in_sheet_ACS_GMR_Import(String entity, String sheetName) throws Throwable {
 //	gmrImport.CloseBtn.click();
-		/*FH   gmrImport.AirlinrDo.click();Thread.sleep(4000);
+		   gmrImport.AirlinrDo.click();Thread.sleep(4000);
 		
 		
 		
@@ -222,7 +222,7 @@ public class ACS_GMR_Import {
 	
 		wm.JavascriptExecutorClick(driver, gmrImport.ShipmentDetails);Thread.sleep(4000);
 		
-		wm.JavascriptExecutorClick(driver, gmrImport.ShipmentDetailscheckbox);Thread.sleep(4000);  TH*/
+		wm.JavascriptExecutorClick(driver, gmrImport.ShipmentDetailscheckbox);Thread.sleep(4000);  
 		
 		
 	}
@@ -231,18 +231,18 @@ public class ACS_GMR_Import {
 		    
 		
 		
-			/*FHwm.JavascriptExecutorClick(driver, gmrImport.ApproveDeliveryOredr);Thread.sleep(4000);
+			wm.JavascriptExecutorClick(driver, gmrImport.ApproveDeliveryOredr);Thread.sleep(4000);
 		wm.JavascriptExecutorClick(driver, gmrImport.ApproveDeliveryOredrpopup);Thread.sleep(4000);
 		
 		wm.JavascriptExecutorClick(driver, gmr.AirlineLogoutArrow);Thread.sleep(4000);
 			
-		wm.JavascriptExecutorClick(driver, gmr.AirlineLogout);Thread.sleep(4000);TH*/
+		wm.JavascriptExecutorClick(driver, gmr.AirlineLogout);Thread.sleep(4000);
 	}
 		
 		@Then("I logout with {string} airline user given in {string} sheet for request status ACS_GMR_Import")
 		public void I_logout_with_airline_user_given_in_sheet_for_request_status_ACS_GMR_Import(String entity, String sheetName) throws Throwable {
 			//gmrImport.CloseBtn.click();
-			/*FH Thread.sleep(4000);                    
+			 Thread.sleep(4000);                    
 			Entity = entity;
 			TestDataReader.ReadLoginDetails(Entity);
 			Thread.sleep(500);
@@ -265,14 +265,14 @@ public class ACS_GMR_Import {
 			
 			//gmrImport.Imports.click();Thread.sleep(8000);
 			wm.JavascriptExecutorClick(driver, gmrImport.Imports);Thread.sleep(4000);
-			Thread.sleep(8000);TH*/
+			Thread.sleep(8000);
 		}
 		@Then("user should be able to do Weight verification of Consol Shipment")
 			public void to_verify_whether_the_user_is_able_to_do_weight_verification_of_consol_shipment() throws Throwable {
 			    
 			
 			
-			/*FH	wm.JavascriptExecutorClick(driver, gmrImport.WeightVerification);Thread.sleep(4000);
+				wm.JavascriptExecutorClick(driver, gmrImport.WeightVerification);Thread.sleep(4000);
 		
 		wm.JavascriptExecutorClick(driver, gmrImport.WeightVerificationUploadDocs);Thread.sleep(4000);
 		
@@ -355,7 +355,7 @@ public class ACS_GMR_Import {
 			
 		wm.JavascriptExecutorClick(driver, gmrImport.wtVerificationsubmit);Thread.sleep(4000);
 		
-		wm.JavascriptExecutorClick(driver, gmrImport.wtVerificationsubmitpopup);Thread.sleep(4000);TH*/
+		wm.JavascriptExecutorClick(driver, gmrImport.wtVerificationsubmitpopup);Thread.sleep(4000);
 		
 		}
 		
@@ -364,7 +364,7 @@ public class ACS_GMR_Import {
 		    
 		
 			
-    	/*FHwm.JavascriptExecutorClick(driver, gmrImport.ConsoleDoRevoke);Thread.sleep(8000);
+    	wm.JavascriptExecutorClick(driver, gmrImport.ConsoleDoRevoke);Thread.sleep(8000);
 		
 		//wm.JavascriptExecutorClick(driver, gmrImport.ConsoleDoCBdropdwon);Thread.sleep(8000);
 		
@@ -382,7 +382,7 @@ public class ACS_GMR_Import {
 		wm.JavascriptExecutorClick(driver, gmrImport.ConsoleDoSubmittedSuccessfully);Thread.sleep(4000);
 	    
 	    gmrImport.FFlogOutArrow.click();Thread.sleep(4000);
-	    gmrImport.FFlogOutTab.click();Thread.sleep(4000);TH*/
+	    gmrImport.FFlogOutTab.click();Thread.sleep(4000);
 	    
     }
 	  @Then("user should be able to do BoE for Direct\\/Consol Shipment")
@@ -393,7 +393,7 @@ public class ACS_GMR_Import {
 	   
 	    //gmrImport.CloseBtn.click();Thread.sleep(4000);
 	    
-		  /*FH TestDataReader.CBloginAadhya();
+		   TestDataReader.CBloginAadhya();
 	    gmrImport.Usernametxtbox.sendKeys(Username); Thread.sleep(4000);
 	    gmrImport.Passwordtxtbox.sendKeys(Password); Thread.sleep(4000);
 	    loginScreen.loginbutton.click();Thread.sleep(4000);
@@ -474,7 +474,7 @@ public class ACS_GMR_Import {
 			
 			wm.JavascriptExecutorClick(driver, gmrImport.BillEntryDetailsSaveBtn);Thread.sleep(4000);
 			wm.JavascriptExecutorClick(driver, gmrImport.BillEntryBackbtn);Thread.sleep(4000);
-			wm.JavascriptExecutorClick(driver, gmrImport.SavemsgOkbtn);Thread.sleep(4000);TH*/
+			wm.JavascriptExecutorClick(driver, gmrImport.SavemsgOkbtn);Thread.sleep(4000);
 	  }
 	
 		@Then("user should be able to do Pick Order for Direct\\/Consol Shipment")
@@ -484,11 +484,11 @@ public class ACS_GMR_Import {
 			
 			//-----------------------------Pick order------------------------------------------	
 			
-			/*FH	wm.JavascriptExecutorClick(driver, gmrImport.PickOrderSubmitbtn);Thread.sleep(4000);
+				wm.JavascriptExecutorClick(driver, gmrImport.PickOrderSubmitbtn);Thread.sleep(4000);
 			gmrImport.PieceForExaminationtxtbox.sendKeys("3");Thread.sleep(4000);
 			gmrImport.Remarkstxtbox.sendKeys("Examination");Thread.sleep(4000);
 			wm.JavascriptExecutorClick(driver, gmrImport.PickOrdersavebtn);Thread.sleep(4000);
-			wm.JavascriptExecutorClick(driver, gmrImport.PickOrdersaveOkbtn);Thread.sleep(4000);TH*/
+			wm.JavascriptExecutorClick(driver, gmrImport.PickOrdersaveOkbtn);Thread.sleep(4000);
 		}
 			
 			
@@ -500,7 +500,7 @@ public class ACS_GMR_Import {
 			
 //			
 			
-	    	/*FH	wm.JavascriptExecutorClick(driver, gmrImport.OoCSubmitbtn);Thread.sleep(4000);
+	    		wm.JavascriptExecutorClick(driver, gmrImport.OoCSubmitbtn);Thread.sleep(4000);
 			gmrImport.OoCtxtboxno.sendKeys("4567897876");Thread.sleep(4000);
 			wm.JavascriptExecutorClick(driver, gmrImport.BoEDateCalender);Thread.sleep(4000);
 			gmrImport.Ooctodaydate.click();Thread.sleep(4000);
@@ -533,7 +533,7 @@ public class ACS_GMR_Import {
 				driver.switchTo().defaultContent();Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.OocUploaddocClosebtn);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.Oocsavebtn);Thread.sleep(4000);
-				wm.JavascriptExecutorClick(driver, gmrImport.OocsavemsgOkbtn);Thread.sleep(4000);TH*/
+				wm.JavascriptExecutorClick(driver, gmrImport.OocsavemsgOkbtn);Thread.sleep(4000);
 				
 	  }
 				
@@ -544,9 +544,9 @@ public class ACS_GMR_Import {
 				//---------------BOE ASI-------------
 		         
 				 
-			/*FHwm.JavascriptExecutorClick(driver, gmrImport.BOEASIicon);Thread.sleep(4000);
+			wm.JavascriptExecutorClick(driver, gmrImport.BOEASIicon);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.Proceedbtn);Thread.sleep(4000);
-				wm.JavascriptExecutorClick(driver, gmrImport.BOEASIsaveOKbtn);Thread.sleep(4000);TH*/
+				wm.JavascriptExecutorClick(driver, gmrImport.BOEASIsaveOKbtn);Thread.sleep(4000);
 				
 		}	
 		@Then("user should be able to assign the shipment to Consignee to create TSP for Direct\\/Consol shipment")
@@ -556,7 +556,7 @@ public class ACS_GMR_Import {
 					
 				//--------------------TSP--------------------------------
 				 
-			/*FH		wm.JavascriptExecutorClick(driver, gmrImport.TSPicon);Thread.sleep(4000);
+					wm.JavascriptExecutorClick(driver, gmrImport.TSPicon);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.TSPproceedbtn);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.ShipmentIntegrationApproacgproceedbtn);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.CommodityTypedropdown);Thread.sleep(4000);
@@ -582,7 +582,7 @@ public class ACS_GMR_Import {
 				//wm.JavascriptExecutorClick(driver, gmrImport.TSPpaynowbtn);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.Yesbtn);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.GenerateTSPYesbtn);Thread.sleep(4000);
-				Thread.sleep(80000);TH*/
+				Thread.sleep(80000);
 		}	
 	@When("user should be able to create single VT for single BoE  from TSP pop up")
 		public void to_check_if_user_is_able_to_create_single_vt_for_single_bo_e_from_tsp_pop_up() throws InterruptedException {
@@ -595,7 +595,7 @@ public class ACS_GMR_Import {
 				
   //  wm.JavascriptExecutorClick(driver, gmrImport.GeneratetokenTab);Thread.sleep(4000);
 				
-		/*FHgmrImport.VehicleNo.sendKeys("MH127896");Thread.sleep(4000);
+		gmrImport.VehicleNo.sendKeys("MH127896");Thread.sleep(4000);
 	
 	gmrImport.DriverLicenseNo.sendKeys("MH7896");Thread.sleep(4000);
 	
@@ -603,15 +603,15 @@ public class ACS_GMR_Import {
 	
 	gmrImport.DriverMobileNo.sendKeys("1234567891");Thread.sleep(4000);
 	
-	gmrImport.AgentMobileNo.sendKeys("2234567891");Thread.sleep(4000);TH*/
+	gmrImport.AgentMobileNo.sendKeys("2234567891");Thread.sleep(4000);
 	}
 	
  @When("user should be able to generate the token on click of Generate Token button")
  public void to_verify_whether_user_is_able_to_generate_the_token_on_click_of_generate_token_button() throws InterruptedException {
 	    
-	 /*FHwm.JavascriptExecutorClick(driver, gmrImport.GeneratetokenBtn);Thread.sleep(4000);
+	 wm.JavascriptExecutorClick(driver, gmrImport.GeneratetokenBtn);Thread.sleep(4000);
 	
-	gmrImport.OKbtn.click();Thread.sleep(4000);TH*/
+	gmrImport.OKbtn.click();Thread.sleep(4000);
 	//gmrImport.VehicleDetailsAdd.click();Thread.sleep(4000);
 	}
 	
@@ -626,7 +626,7 @@ public class ACS_GMR_Import {
  }
 	@Then("To check whether the system displays proper status for ARR,RCF,NFD,ADO,DI,Consol DO, BoE, RFE,FFE,OOC, TSP,VT,GD with proper date and timestamp.")
 	public void to_check_whether_the_system_displays_proper_status_for_arr_rcf_nfd_ado_di_consol_do_bo_e_rfe_ffe_ooc_tsp_vt_gd_with_proper_date_and_timestamp() throws InterruptedException {
-		/*FHgmrImport.close.click();Thread.sleep(4000);
+		gmrImport.close.click();Thread.sleep(4000);
 	
 	
 	//-----------------------Track and Trace----------------------------------------
@@ -638,28 +638,28 @@ public class ACS_GMR_Import {
 	Actions tracktrace = new Actions(driver);
 	//Mouseover on an element
 	tracktrace.moveToElement(gmrImport.TrackTrace).perform();
-	Thread.sleep(4000);TH*/
+	Thread.sleep(4000);
 	}
 	@Then("user should be able to clicks on AWB number and it should display its  details and correct status in its respective fields.")
 	public void to_check_when_user_clicks_on_awb_number_and_it_should_display_its_details_and_correct_status_in_its_respective_fields() throws InterruptedException {
 	    
 	
 	
-		/*FHgmrImport.TrackTrace.click();Thread.sleep(4000);
+		gmrImport.TrackTrace.click();Thread.sleep(4000);
 	
 	Actions gstinfo = new Actions(driver);
 	//Mouseover on an element
 	gstinfo.moveToElement(gmrImport.GSTInfo).perform();
 	Thread.sleep(4000);
 	
-	gmrImport.GSTInfo.click();Thread.sleep(4000);TH*/
+	gmrImport.GSTInfo.click();Thread.sleep(4000);
 	}
 	@Then("user should be able to View the Transaction Report From Sub-menu of Reports")
 	public void to_verify_whether_user_is_able_to_view_the_transaction_report_from_sub_menu_of_reports() throws InterruptedException {
 	    
 	
 	
-	/*FHActions reports = new Actions(driver);
+	Actions reports = new Actions(driver);
 	//Mouseover on an element
 	reports.moveToElement(gmrImport.Reports).perform();
 	Thread.sleep(4000);
@@ -669,14 +669,14 @@ public class ACS_GMR_Import {
 	Select cto = new Select(driver.findElement(By.id("ctl00_hldPage_ddlTerminal")));  
 	cto.selectByVisibleText("Kale_GHA1");
 	
-	gmrImport.ExportToExcelTransactionReport.click();Thread.sleep(4000);TH*/
+	gmrImport.ExportToExcelTransactionReport.click();Thread.sleep(4000);
 	
 }
 	
 	@When("user should be able to View the Dwell Time Report From Sub-menu of Reports")
 	public void to_verify_whether_user_is_able_to_view_the_dwell_time_report_from_sub_menu_of_reports() throws InterruptedException {
 	//Mouseover on an element
-		/*FHActions reports = new Actions(driver);
+		Actions reports = new Actions(driver);
 	reports.moveToElement(gmrImport.Reports).perform();
 	Thread.sleep(4000);
 	
@@ -688,7 +688,7 @@ public class ACS_GMR_Import {
 	gmrImport.DwellTimeReportExportToExcel.click();Thread.sleep(4000);
 	
 	reports.moveToElement(gmrImport.Reports).perform();
-	Thread.sleep(4000);TH*/
+	Thread.sleep(4000);
 	}
 	
 	@Then("user should be able to View the Tonnage Report")
@@ -696,12 +696,12 @@ public class ACS_GMR_Import {
 	   
 	
 	
-	/*FHgmrImport.TonnageReport.click();Thread.sleep(4000);
+	gmrImport.TonnageReport.click();Thread.sleep(4000);
 	
 	gmrImport.TonnageReportAirport.click();Thread.sleep(4000);
 	gmrImport.TonnageReportAirport.sendKeys("HYD");Thread.sleep(4000);
 	
-	gmrImport.TonnageReportExportToExcel.click();Thread.sleep(4000);TH*/
+	gmrImport.TonnageReportExportToExcel.click();Thread.sleep(4000);
 	
 	}
    
@@ -711,12 +711,12 @@ public class ACS_GMR_Import {
 	
 
 	
-		/*FHActions ecustom = new Actions(driver);
+		Actions ecustom = new Actions(driver);
 	//Mouseover on an element
 	ecustom.moveToElement(gmrImport.Ecustom).perform();
 	Thread.sleep(4000);
 	
-	gmrImport.Ecustom.click();Thread.sleep(4000);TH*/
+	gmrImport.Ecustom.click();Thread.sleep(4000);
 	
 	}
 	
@@ -728,7 +728,7 @@ public class ACS_GMR_Import {
 		public void logout_with_airline_ane_login_with_ff() throws Throwable {
 			
 			
-			/*FH	TestDataReader.FFlogin();
+				TestDataReader.FFlogin();
 		    gmrImport.Usernametxtbox.sendKeys(Username); Thread.sleep(4000);
 		    gmrImport.Passwordtxtbox.sendKeys(Password); Thread.sleep(4000);
 		    loginScreen.loginbutton.click();Thread.sleep(4000);
@@ -745,9 +745,9 @@ public class ACS_GMR_Import {
 			Thread.sleep(4000);
 			
 		    wm.JavascriptExecutorClick(driver, gmrImport.Imports);Thread.sleep(4000);
-			Thread.sleep(4000); TH*/
+			Thread.sleep(4000); 
 			
-		/*wm.JavascriptExecutorClick(driver, gmrImport.WeightVerification);Thread.sleep(4000);
+		wm.JavascriptExecutorClick(driver, gmrImport.WeightVerification);Thread.sleep(4000);
 		
 		wm.JavascriptExecutorClick(driver, gmrImport.WeightVerificationUploadDocs);Thread.sleep(4000);
 		
@@ -1033,7 +1033,7 @@ public class ACS_GMR_Import {
 			    gmrImport.TransactionPasswordtxtbox.sendKeys(Username); Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.TSPpaynowbtn);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.Yesbtn);Thread.sleep(4000);
-				wm.JavascriptExecutorClick(driver, gmrImport.GenerateTSPYesbtn);Thread.sleep(4000);*/
+				wm.JavascriptExecutorClick(driver, gmrImport.GenerateTSPYesbtn);Thread.sleep(4000);
 				
 		}	
 	@Then("To check if user is able to create multiple VT for single BoE  from Shipment list page")
@@ -1045,7 +1045,7 @@ public void to_check_if_user_is_able_to_create_multiple_vt_for_single_bo_e_from_
 				
 //    wm.JavascriptExecutorClick(driver, gmrImport.GeneratetokenTab);Thread.sleep(4000);
 				
-		/*FHgmrImport.VehicleNo.sendKeys("MH127896");Thread.sleep(4000);
+		gmrImport.VehicleNo.sendKeys("MH127896");Thread.sleep(4000);
 	
 	gmrImport.DriverLicenseNo.sendKeys("MH7896");Thread.sleep(4000);
 	
@@ -1075,13 +1075,13 @@ public void to_check_if_user_is_able_to_create_multiple_vt_for_single_bo_e_from_
 	gmrImport.Grosswt2.sendKeys("60");
     
 	wm.JavascriptExecutorClick(driver, gmrImport.GeneratetokenBtn);Thread.sleep(4000);
-	gmrImport.OKbtn.click();Thread.sleep(4000);TH*/
+	gmrImport.OKbtn.click();Thread.sleep(4000);
 	
 	}
 	@When("To verify whether user is able to Cancel the token on click of Cancel Token Button from VCT screen")
 public void to_verify_whether_user_is_able_to_cancel_the_token_on_click_of_cancel_token_button_from_vct_screen() throws InterruptedException {
 	
-		/*FHwm.JavascriptExecutorClick(driver, gmrImport.vehicletokendonesign);Thread.sleep(4000);
+		wm.JavascriptExecutorClick(driver, gmrImport.vehicletokendonesign);Thread.sleep(4000);
 	wm.JavascriptExecutorClick(driver, gmrImport.Cancelvehicletokentab);Thread.sleep(4000);
 	wm.JavascriptExecutorClick(driver, gmrImport.Cancelokmsg);Thread.sleep(4000);
 	
@@ -1092,14 +1092,14 @@ public void to_verify_whether_user_is_able_to_cancel_the_token_on_click_of_cance
 	
    // gmrImport.NoP1.sendKeys("3");
 	
-	gmrImport.Grosswt1.sendKeys("120");TH*/
+	gmrImport.Grosswt1.sendKeys("120");
 	}
 	@Then("To check if user is able to create single VT  for multiple BoE  from shipment list page")
 public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_shipment_list_page() throws InterruptedException {
 	//-------------------multiple BOE--------------------------------
 	
 	
-		/*FHgmrImport.AddShipmentTab.click();Thread.sleep(4000);
+		gmrImport.AddShipmentTab.click();Thread.sleep(4000);
 	driver.switchTo().frame(0);
 	gmrImport.firstaddshipchkbox.click();Thread.sleep(4000);
 	//driver.switchTo().defaultContent();Thread.sleep(4000);
@@ -1186,7 +1186,7 @@ public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_
 	ecustom.moveToElement(gmrImport.Ecustom).perform();
 	Thread.sleep(4000);
 	
-	gmrImport.Ecustom.click();Thread.sleep(4000);TH*/
+	gmrImport.Ecustom.click();Thread.sleep(4000);
 	
 	}
 
@@ -1202,7 +1202,7 @@ public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_
 
 
 
-		/*FH	gmr.AllRadioBtn.click();
+			gmr.AllRadioBtn.click();
 			Thread.sleep(4000);
 			
 			gmr.GmrHydRadioOKBtn.click();
@@ -1273,7 +1273,7 @@ public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_
 			Thread.sleep(4000);
 			
 			gmrImport.HAWBDetailsSaveBtn.click();Thread.sleep(4000);
-			gmrImport.MAWBDetailsSuccessPoupMsgBtn.click();Thread.sleep(4000);TH*/
+			gmrImport.MAWBDetailsSuccessPoupMsgBtn.click();Thread.sleep(4000);
 			
 			
 			//gmrImport.DisabledWtVarification.isEnabled();Thread.sleep(4000);
@@ -1286,7 +1286,7 @@ public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_
 			
 			
 			
-			/*gmrImport.AirlinrDo.click();Thread.sleep(4000);
+			gmrImport.AirlinrDo.click();Thread.sleep(4000);
 			
 			
 			
@@ -1311,13 +1311,13 @@ public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_
 			wm.JavascriptExecutorClick(driver, gmrImport.ApproveDeliveryOredr);Thread.sleep(4000);
 			wm.JavascriptExecutorClick(driver, gmrImport.ApproveDeliveryOredrpopup);Thread.sleep(4000);
 			wm.JavascriptExecutorClick(driver, gmr.AirlineLogoutArrow);Thread.sleep(4000);
-			wm.JavascriptExecutorClick(driver, gmr.AirlineLogout);Thread.sleep(4000);*/
+			wm.JavascriptExecutorClick(driver, gmr.AirlineLogout);Thread.sleep(4000);
 	}
 		@When("user should be able to do BoE for Direct\\/Consol Shipment for direct shipment")
 		public void user_should_be_able_to_do_bo_e_for_direct_consol_shipment_for_direct_shipment() throws Throwable {
 			    
 			
-			/*FHTestDataReader.FFlogin();
+			TestDataReader.FFlogin();
 		    gmrImport.Usernametxtbox.sendKeys(Username); Thread.sleep(4000);
 		    gmrImport.Passwordtxtbox.sendKeys(Password); Thread.sleep(4000);
 		    loginScreen.loginbutton.click();Thread.sleep(4000);
@@ -1388,18 +1388,18 @@ public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_
 				
 				wm.JavascriptExecutorClick(driver, gmrImport.BillEntryDetailsSaveBtn);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.BillEntryBackbtn);Thread.sleep(4000);
-				wm.JavascriptExecutorClick(driver, gmrImport.SavemsgOkbtn);Thread.sleep(4000);TH*/
+				wm.JavascriptExecutorClick(driver, gmrImport.SavemsgOkbtn);Thread.sleep(4000);
 		}
 			@Then("user should be able to do Pick Order for Direct\\/Consol Shipment for direct shipment.")
 			public void user_should_be_able_to_do_pick_order_for_direct_consol_shipment_for_direct_shipment() throws InterruptedException {	
 				
 				//-----------------------------Pick order------------------------------------------	
 				
-				/*FH	wm.JavascriptExecutorClick(driver, gmrImport.DirectShipPickorderTab);Thread.sleep(4000);
+					wm.JavascriptExecutorClick(driver, gmrImport.DirectShipPickorderTab);Thread.sleep(4000);
 				gmrImport.PieceForExaminationtxtbox.sendKeys("1");Thread.sleep(4000);
 				gmrImport.Remarkstxtbox.sendKeys("Examination");Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.PickOrdersavebtn);Thread.sleep(4000);
-				wm.JavascriptExecutorClick(driver, gmrImport.PickOrdersaveOkbtn);Thread.sleep(4000);TH*/
+				wm.JavascriptExecutorClick(driver, gmrImport.PickOrdersaveOkbtn);Thread.sleep(4000);
 	   }
 				
 			@When("user should be able to do OOC for Direct\\/Consol Shipment for direct shipment.")
@@ -1408,7 +1408,7 @@ public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_
 				
 //				
 				
-				/*FH	wm.JavascriptExecutorClick(driver, gmrImport.OoCSubmitbtn);Thread.sleep(4000);
+					wm.JavascriptExecutorClick(driver, gmrImport.OoCSubmitbtn);Thread.sleep(4000);
 				gmrImport.OoCtxtboxno.sendKeys("4567897876");Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.BoEDateCalender);Thread.sleep(4000);
 				gmrImport.Ooctodaydate.click();Thread.sleep(4000);
@@ -1441,7 +1441,7 @@ public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_
 					driver.switchTo().defaultContent();Thread.sleep(4000);
 					wm.JavascriptExecutorClick(driver, gmrImport.OocUploaddocClosebtn);Thread.sleep(4000);
 					wm.JavascriptExecutorClick(driver, gmrImport.Oocsavebtn);Thread.sleep(4000);
-					wm.JavascriptExecutorClick(driver, gmrImport.OocsavemsgOkbtn);Thread.sleep(4000);TH*/
+					wm.JavascriptExecutorClick(driver, gmrImport.OocsavemsgOkbtn);Thread.sleep(4000);
 					//WebElement icon11 = driver.findElement(By.xpath("/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[2]/div/div/div[3]/input"));
 			         //// Actions ob11 = new Actions(driver);
 			         // ob11.click(icon11);
@@ -1454,16 +1454,16 @@ public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_
 					
 		//	------------------------BOE ASI--------------------------------------------------
 					
-					/*FH wm.JavascriptExecutorClick(driver, gmrImport.BOEASIicon);Thread.sleep(4000);
+					 wm.JavascriptExecutorClick(driver, gmrImport.BOEASIicon);Thread.sleep(4000);
 					wm.JavascriptExecutorClick(driver, gmrImport.Proceedbtn);Thread.sleep(4000);
-					wm.JavascriptExecutorClick(driver, gmrImport.BOEASIsaveOKbtn);Thread.sleep(4000);TH*/
+					wm.JavascriptExecutorClick(driver, gmrImport.BOEASIsaveOKbtn);Thread.sleep(4000);
 	    }	
 			    @Then("To check if user can create TSP for Direct shipment as self assign.")
 				public void to_check_if_user_can_create_tsp_for_direct_shipment_as_self_assign() throws Throwable {	
 					
 		//-------------------------TSP-------------------------------------------------------------			
 					
-			    	/*FH	wm.JavascriptExecutorClick(driver, gmrImport.TSPicon);Thread.sleep(4000);
+			    		wm.JavascriptExecutorClick(driver, gmrImport.TSPicon);Thread.sleep(4000);
 					wm.JavascriptExecutorClick(driver, gmrImport.TSPproceedbtn);Thread.sleep(4000);
 					//wm.JavascriptExecutorClick(driver, gmrImport.CommodityTypedropdown);Thread.sleep(4000);
 					//wm.JavascriptExecutorClick(driver, gmrImport.GeneralCargo);Thread.sleep(4000);
@@ -1479,7 +1479,7 @@ public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_
 					wm.JavascriptExecutorClick(driver, gmrImport.TSPpaynowbtn);Thread.sleep(4000);
 					wm.JavascriptExecutorClick(driver, gmrImport.Yesbtn);Thread.sleep(4000);
 					wm.JavascriptExecutorClick(driver, gmrImport.GenerateTSPYesbtn);Thread.sleep(4000);
-			    	Thread.sleep(80000);TH*/
+			    	Thread.sleep(80000);
 				
 		
 			//<<<<------------------	Generate Token ---------------------->>>>>>>	
@@ -1489,7 +1489,7 @@ public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_
 					
 //	    wm.JavascriptExecutorClick(driver, gmrImport.GeneratetokenTab);Thread.sleep(4000);
 					
-			    	/*FH	gmrImport.VehicleNo.sendKeys("MH127896");Thread.sleep(4000);
+			    		gmrImport.VehicleNo.sendKeys("MH127896");Thread.sleep(4000);
 		
 		gmrImport.DriverLicenseNo.sendKeys("MH7896");Thread.sleep(4000);
 		
@@ -1509,7 +1509,7 @@ public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_
 		//----------------------------E-Docket-----------------------------------------------------------
 		
 		gmrImport.DirecteDocketTab.click();Thread.sleep(4000);
-		gmrImport.close.click();Thread.sleep(4000);  TH*/
+		gmrImport.close.click();Thread.sleep(4000);  
 		
 			
 		

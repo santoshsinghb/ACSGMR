@@ -284,10 +284,10 @@ public class ACS_GMR_Admin {
 	@Then("User should be able to click on View Recipt from grid and PDF file should be downloaded with the Recipt")
 	public void user_should_be_able_to_click_on_view_recipt_from_grid_and_pdf_file_should_be_downloaded_with_the_recipt() throws InterruptedException {
 		
-		gmrAdmin.viewRecieptLink.click();Thread.sleep(6000);
-		
-		//gmrAdmin.downloadbtn.click();Thread.sleep(4000);
-		driver.get("https://acsdemo.upliftindia.com/ACS_GMR_STG/UI/PDAStatusListing.aspx");
+//		gmrAdmin.viewRecieptLink.click();Thread.sleep(6000);
+//		
+//		//gmrAdmin.downloadbtn.click();Thread.sleep(4000);
+//		driver.get("https://acsdemo.upliftindia.com/ACS_GMR_STG/UI/PDAStatusListing.aspx");
 		
 		
 	}
@@ -296,9 +296,9 @@ public class ACS_GMR_Admin {
 	@Then("User should be able to click on {string} sub-menu of  Account Management menu and Refund Receipt page should be displayed.")
 	public void user_should_be_able_to_click_on_sub_menu_of_account_management_menu_and_refund_receipt_page_should_be_displayed(String string) throws InterruptedException {
         
-		wm.JavascriptExecutorClick(driver, gmrAdmin.AccountManagement);Thread.sleep(2000);
-		
-		wm.JavascriptExecutorClick(driver, gmrAdmin.RefundReciept);Thread.sleep(2000);
+//		wm.JavascriptExecutorClick(driver, gmrAdmin.AccountManagement);Thread.sleep(2000);
+//		
+//		wm.JavascriptExecutorClick(driver, gmrAdmin.RefundReciept);Thread.sleep(2000);
 		
 		
 		
@@ -306,15 +306,15 @@ public class ACS_GMR_Admin {
 	@Then("User should be able to select {string} from the calendar icon or can change the date by arrow keys from keyboard and User should be able to click on {string} button and  Records should be displayed to the user according to the applied filters.")
 	public void user_should_be_able_to_select_from_the_calendar_icon_or_can_change_the_date_by_arrow_keys_from_keyboard_and_user_should_be_able_to_click_on_button_and_records_should_be_displayed_to_the_user_according_to_the_applied_filters(String string, String string2) throws InterruptedException {
         
-		wm.JavascriptExecutorClick(driver, gmrAdmin.calenderIcon);Thread.sleep(2000);
-		
-		wm.JavascriptExecutorClick(driver, gmrAdmin.calenderArrow);Thread.sleep(2000);
-		
-		wm.JavascriptExecutorClick(driver, gmrAdmin.calenderArrow);Thread.sleep(2000);
-		
-		wm.JavascriptExecutorClick(driver, gmrAdmin.firstjune);Thread.sleep(2000);
-		
-		wm.JavascriptExecutorClick(driver, gmrAdmin.SearchBtn);Thread.sleep(6000);
+//		wm.JavascriptExecutorClick(driver, gmrAdmin.calenderIcon);Thread.sleep(2000);
+//		
+//		wm.JavascriptExecutorClick(driver, gmrAdmin.calenderArrow);Thread.sleep(2000);
+//		
+//		wm.JavascriptExecutorClick(driver, gmrAdmin.calenderArrow);Thread.sleep(2000);
+//		
+//		wm.JavascriptExecutorClick(driver, gmrAdmin.firstjune);Thread.sleep(2000);
+//		
+//		wm.JavascriptExecutorClick(driver, gmrAdmin.SearchBtn);Thread.sleep(6000);
 	}
 
 	
@@ -322,10 +322,10 @@ public class ACS_GMR_Admin {
 	@Then("User should be able to click on {string} sub-menu of Account Management menu and PD Acc.Report page should be displayed.")
 	public void user_should_be_able_to_click_on_sub_menu_of_account_management_menu_and_pd_acc_report_page_should_be_displayed(String string) throws InterruptedException {
         
-		
-		wm.JavascriptExecutorClick(driver, gmrAdmin.AccountManagement);Thread.sleep(2000);
-		
-		wm.JavascriptExecutorClick(driver, gmrAdmin.CTOLedger);Thread.sleep(2000);
+//		
+//		wm.JavascriptExecutorClick(driver, gmrAdmin.AccountManagement);Thread.sleep(2000);
+//		
+//		wm.JavascriptExecutorClick(driver, gmrAdmin.CTOLedger);Thread.sleep(2000);
 		
        
 	}
@@ -344,44 +344,44 @@ public class ACS_GMR_Admin {
 		
 		
 		    wm.JavascriptExecutorClick(driver, gmrAdmin.calenderIcon);Thread.sleep(2000);
-			
-			//wm.JavascriptExecutorClick(driver, gmrAdmin.calenderArrow);Thread.sleep(2000);
-			
-			//wm.JavascriptExecutorClick(driver, gmrAdmin.calenderArrow);Thread.sleep(2000);
-			
-			wm.JavascriptExecutorClick(driver, gmrAdmin.septdate);Thread.sleep(2000);
-			
-			Select objSelect =new Select(driver.findElement(By.id("ctl00_hldPage_drppda")));
-			objSelect.selectByVisibleText("GMR HYD");
-			
-			
-			//wm.JavascriptExecutorClick(driver, gmrAdmin.SelectCTOdropdown);Thread.sleep(4000);
-			//gmrAdmin.SelectCTOdropdown.click();Thread.sleep(2000);
-			//wm.JavascriptExecutorClick(driver, gmrAdmin.GMRHYD);Thread.sleep(4000);
-			//gmrAdmin.GMRHYD.click();Thread.sleep(2000);
-			wm.JavascriptExecutorClick(driver, gmrAdmin.View);Thread.sleep(20000);
+//			
+//			//wm.JavascriptExecutorClick(driver, gmrAdmin.calenderArrow);Thread.sleep(2000);
+//			
+//			//wm.JavascriptExecutorClick(driver, gmrAdmin.calenderArrow);Thread.sleep(2000);
+//			
+//			wm.JavascriptExecutorClick(driver, gmrAdmin.septdate);Thread.sleep(2000);
+//			
+//			Select objSelect =new Select(driver.findElement(By.id("ctl00_hldPage_drppda")));
+//			objSelect.selectByVisibleText("GMR HYD");
+//			
+//			
+//			//wm.JavascriptExecutorClick(driver, gmrAdmin.SelectCTOdropdown);Thread.sleep(4000);
+//			//gmrAdmin.SelectCTOdropdown.click();Thread.sleep(2000);
+//			//wm.JavascriptExecutorClick(driver, gmrAdmin.GMRHYD);Thread.sleep(4000);
+//			//gmrAdmin.GMRHYD.click();Thread.sleep(2000);
+//			wm.JavascriptExecutorClick(driver, gmrAdmin.View);Thread.sleep(20000);
 			
 	}
 	@Then("User should be able to click on {string} button and Excel file should be downloaded with the credits and debits details for each AWB no.")
 	public void user_should_be_able_to_click_on_button_and_excel_file_should_be_downloaded_with_the_credits_and_debits_details_for_each_awb_no(String string) throws InterruptedException {
-		wm.JavascriptExecutorClick(driver, gmrAdmin.ExportToExcel);Thread.sleep(2000);
+		//wm.JavascriptExecutorClick(driver, gmrAdmin.ExportToExcel);Thread.sleep(2000);
 		
 		
 	}
 	@Then("User should be able to click on {string} button and PDF file should be downloaded with the credits and debits details for each AWB no")
 	public void user_should_be_able_to_click_on_button_and_pdf_file_should_be_downloaded_with_the_credits_and_debits_details_for_each_awb_no(String string) throws InterruptedException {
-		wm.JavascriptExecutorClick(driver, gmrAdmin.ExportToPDF);Thread.sleep(2000);
-		//driver.switchTo().alert().accept();Thread.sleep(1000);
-		
-		DesiredCapabilities caps2 = new DesiredCapabilities();
-	    caps2.setCapability("browser", "Chrome");
-	    caps2.setCapability("browser_version", "75.0");
-	    caps2.setCapability("os", "Windows");
-	    caps2.setCapability("os_version", "10");
-	    
-	    String options2 = null;
-		caps2.setCapability(ChromeOptions.CAPABILITY, options2);
-		Thread.sleep(1000);
+//		wm.JavascriptExecutorClick(driver, gmrAdmin.ExportToPDF);Thread.sleep(2000);
+//		//driver.switchTo().alert().accept();Thread.sleep(1000);
+//		
+//		DesiredCapabilities caps2 = new DesiredCapabilities();
+//	    caps2.setCapability("browser", "Chrome");
+//	    caps2.setCapability("browser_version", "75.0");
+//	    caps2.setCapability("os", "Windows");
+//	    caps2.setCapability("os_version", "10");
+//	    
+//	    String options2 = null;
+//		caps2.setCapability(ChromeOptions.CAPABILITY, options2);
+//		Thread.sleep(1000);
 	}
 
 

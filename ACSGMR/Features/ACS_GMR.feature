@@ -26,7 +26,6 @@ Background: Launch the ACS application and login the application
  @ACS_GMR1
    Scenario: create a new AWB ACS_GMR
      Given To verify whether the user is able to Create Booking from e-Booking ACS_GMR
-     Then To verify whether the user is able to Create Consol AWB ACS_GMR
      Then To verify Whether User is able to Upload the HAWB Details From sub-menu of e-AWB ACS_GMR
      Then I login with "ACS AIRLINE KALE" airline user given in "Login" sheet ACS_GMR
      Then I logout with "ACS USER" airline user given in "Login" sheet ACS_GMR
@@ -39,3 +38,5 @@ Background: Launch the ACS application and login the application
      Then To verify whether the user is able to assign AWB from Assign to Sub Agent from AWB Stock Inventory ACS_GMR
      Then To verify whether the user is able to view the AWB from Sub Agent Inventory ACS_GMR
      Then To verify whether user is able to View the Transaction Report From Sub-menu of Reports ACS_GMR
+     
+     
