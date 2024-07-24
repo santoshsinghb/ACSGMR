@@ -72,41 +72,41 @@ public class ACS_GMR_Negative_Practice {
 		@Then("To verify user able to create Direct AWB in FF login ACS_GMR_Practice {string}")
 		public void To_verify_user_able_to_create_Direct_AWB_in_FF_login_ACS_GMR_Practice(String mawbno_17) throws InterruptedException, AWTException {
 		
-//		gmr.QuickASITab();Thread.sleep(2000);
-//		wm.JavascriptExecutorClick(driver, gmr.QuickASIMAWBNoPrefix);Thread.sleep(2000);
-//		gmr.QuickASIMAWBNoPrefix.sendKeys("999");Thread.sleep(2000);
-//
-//		gmr.QuickASIMAWBNo.sendKeys(mawbno_17);
-//		Thread.sleep(2000);
-//		gmr.QuickASIForAadhya();
-//		Thread.sleep(2000);
-////		gmr.MAWBListInput.click();Thread.sleep(2000);
-////		gmr.MAWBListInput.sendKeys(mawbno_17);
-//		gmr.MAWBInput();
-//		gmr.MAWBASI();	
-//		gmr.CO();
-//		
-//		wm.driver.get("https://acsdemo.upliftindia.com/ACS_GMR_STG/UI/UpliftLogin.aspx");
-//
-//		Thread.sleep(1000);
+		gmr.QuickASITab();Thread.sleep(2000);
+		wm.JavascriptExecutorClick(driver, gmr.QuickASIMAWBNoPrefix);Thread.sleep(2000);
+		gmr.QuickASIMAWBNoPrefix.sendKeys("999");Thread.sleep(2000);
+
+		gmr.QuickASIMAWBNo.sendKeys(mawbno_17);
+		Thread.sleep(2000);
+		gmr.QuickASIForAadhya();
+		Thread.sleep(2000);
+//		gmr.MAWBListInput.click();Thread.sleep(2000);
+//		gmr.MAWBListInput.sendKeys(mawbno_17);
+		gmr.MAWBInput();
+		gmr.MAWBASI();	
+		gmr.CO();
+		
+		wm.driver.get("https://acsdemo.upliftindia.com/ACS_GMR_STG/UI/UpliftLogin.aspx");
+
+		Thread.sleep(1000);
 		}
 		
 		
 		@Then("To verify Airline login ACS_GMR_Practice {string}")
 		public void To_verify_Airline_login_ACS_GMR_Practice(String mawbno_17) throws InterruptedException, AWTException {
 			
-//			gmr.Airline();
-//			gmr.CartingOrderShipmentMAWBNo.sendKeys("999" + mawbno_17);
-//			Thread.sleep(2000);
-//			gmr.AirlineApprove();
-//			
-//			Thread.sleep(2000);
-//			wm.driver.get("https://acsdemo.upliftindia.com/ACS_GMR_STG/UI/UpliftLogin.aspx");
-//
-//			Thread.sleep(1000);
+			gmr.Airline();
+			gmr.CartingOrderShipmentMAWBNo.sendKeys("999" + mawbno_17);
+			Thread.sleep(2000);
+			gmr.AirlineApprove();
+			
+			Thread.sleep(2000);
+			wm.driver.get("https://acsdemo.upliftindia.com/ACS_GMR_STG/UI/UpliftLogin.aspx");
+
+			Thread.sleep(1000);
 			
 			
-			Thread.sleep(90000);
+		//	Thread.sleep(90000);
 //			
 		}	
 						
@@ -274,7 +274,7 @@ public class ACS_GMR_Negative_Practice {
 		@Then("To verify user able to create consol AWB in FF login add 1SB ACS_GMR_Practice {string}")
 		public void To_verify_user_able_to_create_consol_AWB_in_FF_login_add_1SB_ACS_GMR_Practice(String mawbno_13) throws InterruptedException, AWTException {
 		
-			
+			Thread.sleep(90000);
 			//gmr.AllRaadioBtn();Thread.sleep(2000);
 			
 //			//gmr.AllRadioBtn.click();
@@ -283,31 +283,31 @@ public class ACS_GMR_Negative_Practice {
 //		//	gmr.GmrHydRadioOKBtn.click();
 //		//	Thread.sleep(2000);
 			
-			gmr.QuickASITab();
-			wm.JavascriptExecutorClick(driver, gmr.QuickASIMAWBNoPrefix);Thread.sleep(2000);
-			gmr.QuickASIMAWBNoPrefix.sendKeys("999");Thread.sleep(2000);
-
-			gmr.QuickASIMAWBNo.sendKeys(mawbno_13);
-			Thread.sleep(3000);
-			gmr.QuickASIConsoleForAadhya();
-			Thread.sleep(2000);
-			gmr.AddHAWBForAadhya();
-			
-			Actions action1 = new Actions(driver);
-			action1.moveToElement(gmr.eAWBTab).perform();
-			Thread.sleep(1000);
+//			gmr.QuickASITab();
+//			wm.JavascriptExecutorClick(driver, gmr.QuickASIMAWBNoPrefix);Thread.sleep(2000);
+//			gmr.QuickASIMAWBNoPrefix.sendKeys("999");Thread.sleep(2000);
+//
+//			gmr.QuickASIMAWBNo.sendKeys(mawbno_13);
+//			Thread.sleep(3000);
+//			gmr.QuickASIConsoleForAadhya();
+//			Thread.sleep(2000);
+//			gmr.AddHAWBForAadhya();
+//			
+//			Actions action1 = new Actions(driver);
+//			action1.moveToElement(gmr.eAWBTab).perform();
+//			Thread.sleep(1000);
 			//gmr.MAWBList.click();Thread.sleep(2000);
 			
 //			gmr.MAWBListInput.click();Thread.sleep(2000);
 //			gmr.MAWBListInput.sendKeys(mawbno_13);
-			gmr.MAWBInput();
-			gmr.MAWBASI();	Thread.sleep(2000);
-			gmr.CO();
-			
-			Thread.sleep(8000);
-			wm.driver.get("https://acsdemo.upliftindia.com/ACS_GMR_STG/UI/UpliftLogin.aspx");
-
-			Thread.sleep(3000);  
+//			gmr.MAWBInput();
+//			gmr.MAWBASI();	Thread.sleep(2000);
+//			gmr.CO();
+//			
+//			Thread.sleep(8000);
+//			wm.driver.get("https://acsdemo.upliftindia.com/ACS_GMR_STG/UI/UpliftLogin.aspx");
+//
+//			Thread.sleep(3000);  
 		
 		}
 		
@@ -316,14 +316,14 @@ public class ACS_GMR_Negative_Practice {
 		@Then("To verify airline login ACS_GMR_Practice {string}")
 		public void To_verify_airline_login_ACS_GMR_Practice(String mawbno_13) throws InterruptedException, AWTException {
 		
-			gmr.Airline();
-			gmr.CartingOrderShipmentMAWBNo.sendKeys("999" + mawbno_13);
-			Thread.sleep(2000);
-			gmr.AirlineApprove();
-			
-			Thread.sleep(8000);
-			wm.driver.get("https://acsdemo.upliftindia.com/ACS_GMR_STG/UI/UpliftLogin.aspx");
-			Thread.sleep(1000);
+//			gmr.Airline();
+//			gmr.CartingOrderShipmentMAWBNo.sendKeys("999" + mawbno_13);
+//			Thread.sleep(2000);
+//			gmr.AirlineApprove();
+//			
+//			Thread.sleep(8000);
+//			wm.driver.get("https://acsdemo.upliftindia.com/ACS_GMR_STG/UI/UpliftLogin.aspx");
+//			Thread.sleep(1000);
 			
 			
 			
@@ -334,11 +334,11 @@ public class ACS_GMR_Negative_Practice {
 		
 		//	gmr.AllRaadioBtn();Thread.sleep(1000);
 			
-			Actions bondedaction = new Actions(driver);
-			bondedaction.moveToElement(gmr.FFDropdownForAAdyaLogistics).perform();
-			Thread.sleep(2000);
-			wm.JavascriptExecutorClick(driver, gmr.FFCustomBroker);
-			Thread.sleep(1000);
+//			Actions bondedaction = new Actions(driver);
+//			bondedaction.moveToElement(gmr.FFDropdownForAAdyaLogistics).perform();
+//			Thread.sleep(2000);
+//			wm.JavascriptExecutorClick(driver, gmr.FFCustomBroker);
+//			Thread.sleep(1000);
 		}
 		
 		@Then("To verify whether the user is able to do multiple SB ASI for all SB in CB login ACS_GMR_Practice {string}")
@@ -746,34 +746,34 @@ public class ACS_GMR_Negative_Practice {
 		@Then("To verify whether the user is able to rejection of CO from airline login ACS_GMR_Practice {string}")
 		public void To_verify_whether_the_user_is_able_to_rejection_of_CO_from_airline_login_ACS_GMR_Practice(String mawbno_39) throws InterruptedException, AWTException {
 		
-			gmr.QuickASITab();
-			wm.JavascriptExecutorClick(driver, gmr.QuickASIMAWBNoPrefix);Thread.sleep(2000);
-			gmr.QuickASIMAWBNoPrefix.sendKeys("999");Thread.sleep(2000);
-
-			gmr.QuickASIMAWBNo.sendKeys(mawbno_39);
-			Thread.sleep(2000);
-			gmr.QuickASIForAdvik();
-			Thread.sleep(2000);
-//			gmr.MAWBListInput.click();Thread.sleep(2000);
-//			gmr.MAWBListInput.sendKeys(mawbno_39);
-			gmr.MAWBInput(); 
-			gmr.MAWBASI();	
-			gmr.CO();
-			
-			Thread.sleep(8000);
-			wm.driver.get("https://acsdemo.upliftindia.com/ACS_GMR_STG/UI/UpliftLogin.aspx");
-
-			Thread.sleep(8000);
+//			gmr.QuickASITab();
+//			wm.JavascriptExecutorClick(driver, gmr.QuickASIMAWBNoPrefix);Thread.sleep(2000);
+//			gmr.QuickASIMAWBNoPrefix.sendKeys("999");Thread.sleep(2000);
+//
+//			gmr.QuickASIMAWBNo.sendKeys(mawbno_39);
+//			Thread.sleep(2000);
+//			gmr.QuickASIForAdvik();
+//			Thread.sleep(2000);
+////			gmr.MAWBListInput.click();Thread.sleep(2000);
+////			gmr.MAWBListInput.sendKeys(mawbno_39);
+//			gmr.MAWBInput(); 
+//			gmr.MAWBASI();	
+//			gmr.CO();
+//			
+//			Thread.sleep(8000);
+//			wm.driver.get("https://acsdemo.upliftindia.com/ACS_GMR_STG/UI/UpliftLogin.aspx");
+//
+			Thread.sleep(80000);
 		
 		}
 		
 		@Then("To verify rejection of airline login ACS_GMR_Practice {string}")
 		public void To_verify_rejection_of_airline_login_ACS_GMR_Practice(String mawbno_39) throws InterruptedException, AWTException {
 			
-			gmr.Airline();
-			gmr.CartingOrderShipmentMAWBNo.sendKeys("999" + mawbno_39);
-			Thread.sleep(2000);
-			
+//			gmr.Airline();
+//			gmr.CartingOrderShipmentMAWBNo.sendKeys("999" + mawbno_39);
+//			Thread.sleep(2000);
+//			
 //			wm.JavascriptExecutorClick(driver, gmr.CartingOrderShipmentMAWBNoSearchBtn);Thread.sleep(2000);
 //			wm.JavascriptExecutorClick(driver, gmr.Action);Thread.sleep(4000);
 //			

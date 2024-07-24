@@ -32,7 +32,7 @@ Background: Launch the ACS application and login the application ACS_GMR_Practic
    Then add 2SB details and generate single VT in CB login ACS_GMR_Practice
    Examples:
    |MAWBNo_17   |
-   |76675432    |
+   |87656774    |
    
     @ACS_GMR_NewCR_Flow2
    
@@ -57,7 +57,7 @@ Background: Launch the ACS application and login the application ACS_GMR_Practic
    
    Examples:
    |MAWBNo_13   |
-   |76675476    |
+   |87656715    |
    
    @ACS_GMR_NewCR_Flow3
    
@@ -67,7 +67,7 @@ Background: Launch the ACS application and login the application ACS_GMR_Practic
    Then To verify whether the user is able to rejection of CO from airline login ACS_GMR_Practice "<MAWBNo_39>"
    Then I login with "ACS AIRLINE KALE" user given in "Login" sheet ACS_GMR_Practice
    Then To verify rejection of airline login ACS_GMR_Practice "<MAWBNo_39>"
-   Then I login with "ACS USER" user given in "Login" sheet ACS_GMR_Practice
+  Then I login with "ACS USER" user given in "Login" sheet ACS_GMR_Practice
    Then To verify whether the user is able to rejection of CO ACS_GMR_Practice "<MAWBNo_39>"
   Then I login with "ACS AIRLINE KALE" user given in "Login" sheet ACS_GMR_Practice
    Then till TSP process from airline login ACS_GMR_Practice "<MAWBNo_39>"
@@ -81,12 +81,12 @@ Background: Launch the ACS application and login the application ACS_GMR_Practic
    Then To verify whether the system allow the user to do SB ASI for submitted SB ASI TSP done for 2 SB Addition of 3rd SB and Submission of SB ASI ACS_GMR_Practice "<MAWBNo_39>"
    Then To verify whether the user is able to view the TSP and VT Print as well as ACS_GMR_Practice "<MAWBNo_39>"
    Then VT print from FF login ACS_GMR_Practice "<MAWBNo_39>"
-   Then I login with "ACS AIRLINE KALE" user given in "Login" sheet ACS_GMR_Practice
+   #Then I login with "ACS AIRLINE KALE" user given in "Login" sheet ACS_GMR_Practice
    Then To verify whether the user is able to rejection of CO from Airline login or not for those AWB TSP already process ACS_GMR_Practice "<MAWBNo_39>"
    
    Examples:
    |MAWBNo_39   |
-   |76675465    |
+   |87656726    |
    
    
    

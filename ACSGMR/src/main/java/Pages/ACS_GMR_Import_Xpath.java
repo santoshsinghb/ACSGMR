@@ -55,6 +55,9 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_txtFlightNo']")
 	public WebElement FlightNo;
 	
+	@FindBy(xpath = "//*[@id='ctl00_hldPage_txtCarriarCode']")
+	public WebElement FlightPrefix;
+	
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_txtNumberOfPackages']")
 	public WebElement NoOfPckg;
 	
@@ -319,7 +322,7 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "/html/body/form/div[4]/div[1]/div[1]/div/div/a[2]")
 	public WebElement CBImportTab;
 	
-	@FindBy(xpath = "/html/body/form/div[4]/div[1]/div[2]/div/ul/li[6]/a/label/strong")
+	@FindBy(xpath = "//*[@id='ctl00_lblbusinessline']")
 	public WebElement BussinessLine;
 	
 	@FindBy(xpath = "/html/body/form/div[4]/div[1]/div[2]/div/ul/li[6]/ul/li[1]/a")
@@ -331,7 +334,7 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[5]/div/div/div[3]/button")
 	public WebElement SavemsgOkbtn;
 	
-	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[2]/div/div[2]/div/div[2]/fieldset/div[2]/div[2]/div/table/tbody/tr[2]/td[19]/a")
+	@FindBy(xpath = "//*[@id='ctl00_hldPage_grdMAWB_ctl02_btnPickOrder2']")
 	public WebElement PickOrderSubmitbtn;
 	
 	@FindBy(xpath = "(//*[@class='createbol-txtbox'])[4]")
@@ -398,7 +401,7 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_ddlTSPCommodityGroup']")
 	public WebElement CommodityTypedropdown;
 	
-	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[2]/div/div[2]/div/div[4]/div/div/div[2]/div[2]/div/table[1]/tbody/tr[1]/td[2]/select/option[3]")
+	@FindBy(xpath = "//*[text()='General Cargo']")
 	public WebElement GeneralCargo;
 	
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_ddlComodityTypeName']")
@@ -428,10 +431,10 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_btnGenerateTokenFromTSPConfirm']")
 	public WebElement GenerateTSPYesbtn;
 	
-	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[2]/div/div[2]/div/div[2]/fieldset/div[2]/div[2]/div/table/tbody/tr[2]/td[28]/input[1]")
+	@FindBy(xpath = "//*[@id='ctl00_hldPage_grdMAWB_ctl02_btnEDocket']")
 	public WebElement eDocketIcon;
 	
-	@FindBy(xpath = "/html/body/form/div[12]/div[3]/div/button")
+	@FindBy(xpath = "//*[@class='ui-button ui-corner-all ui-widget']")
 	public WebElement close;
 	
 	@FindBy(xpath = "/html/body/form/div[4]/div[1]/div[2]/div/ul/li[6]/ul/li[2]/a")
@@ -464,7 +467,7 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[7]/div/div/div/div[3]/div/table/tbody/tr[1]/td[8]/input")
 	public WebElement Grosswt1 ;
 	
-	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[2]/div/div[2]/div/div[2]/fieldset/div[2]/div[2]/div/table/tbody/tr[2]/td[24]/span/input")
+	@FindBy(xpath = "//*[@id='ctl00_hldPage_grdMAWB_ctl02_chkTokenSelect']")
 	public WebElement Vehicletokencheckbox;
 	
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_btnCancelToken']")
@@ -473,7 +476,7 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[11]/div/div/div[3]/input")
 	public WebElement Cancelokmsg ;
 	
-	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[2]/div/div[2]/div/div[2]/fieldset/div[3]/div/div[2]/div[3]/a/span/input")
+	@FindBy(xpath = "//*[@id='ctl00_hldPage_btnGenerateToken']")
 	public WebElement Generateatoken ;
 	
 	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[7]/div/div/div/div[3]/div/table/tbody/tr[2]/td[8]/input")
@@ -491,6 +494,9 @@ public class ACS_GMR_Import_Xpath extends Pages.BasePage {
 	
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_btnAssign']")
 	public WebElement Addbtn ;
+	
+	@FindBy(xpath = "//*[@class='GreenBGTheme blue-butn'][3]")
+	public WebElement AddOKbtn ;
 	
 	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[2]/div/div[2]/div/div[2]/fieldset/div[2]/div[2]/div/table/tbody/tr[2]/td[15]/input[1]")
 	public WebElement DisabledWtVarification ;

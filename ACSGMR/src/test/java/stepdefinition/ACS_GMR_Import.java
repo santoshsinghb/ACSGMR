@@ -125,6 +125,10 @@ public class ACS_GMR_Import {
 	down.keyPress(KeyEvent.VK_ENTER);
 	Thread.sleep(4000);
 	
+	
+	gmrImport.FlightPrefix.click();Thread.sleep(2000);
+	gmrImport.FlightPrefix.sendKeys("zz");Thread.sleep(2000);
+	
 	gmrImport.FlightNo.click();Thread.sleep(2000);
 	gmrImport.FlightNo.sendKeys("5352");Thread.sleep(2000);
 	
@@ -257,11 +261,11 @@ public class ACS_GMR_Import {
 			
 			//gmrImport.MAWBNOInShipmentDetailsDownArrow.click();Thread.sleep(4000);
 			//gmrImport.Contains.click();Thread.sleep(4000);
-			//gmr.AllRadioBtn.click();
-			//Thread.sleep(4000);
+			gmr.AllRadioBtn.click();
+			Thread.sleep(4000);
 			
-			//gmr.GmrHydRadioOKBtn.click();
-		//	Thread.sleep(4000);
+			gmr.GmrHydRadioOKBtn.click();
+			Thread.sleep(4000);
 			
 			//gmrImport.Imports.click();Thread.sleep(8000);
 			wm.JavascriptExecutorClick(driver, gmrImport.Imports);Thread.sleep(4000);
@@ -403,16 +407,7 @@ public class ACS_GMR_Import {
 		gmr.GmrHydRadioOKBtn.click();
 		Thread.sleep(6000);
 	    
-	   // wm.JavascriptExecutorClick(driver, gmrImport.AllRadioBtn);Thread.sleep(4000);
-	  //  gmrImport.AllRadioBtn.click();
-		//Thread.sleep(4000);
-		
-		//gmrImport.CBImportTab.click();
-		//Thread.sleep(4000);
-		
-		//Actions reports = null;
-		//reports.moveToElement(gmrImport.BussinessLine).perform();
-		//Thread.sleep(4000);
+	 
 		
 		Actions action2 = new Actions(driver);
 		action2.moveToElement(gmrImport.BussinessLine).perform();
@@ -464,7 +459,7 @@ public class ACS_GMR_Import {
 			uploadboe.delay(2000);
 
 			uploadboe.keyPress(KeyEvent.VK_ENTER);
-//			uploaddoc.keyPress(KeyEvent.VK_ENTER);
+			
 			uploadboe.delay(1000);
 			
 			wm.JavascriptExecutorClick(driver, gmrImport.UploadBoEBtnChooseFile);Thread.sleep(4000);
@@ -556,30 +551,29 @@ public class ACS_GMR_Import {
 					
 				//--------------------TSP--------------------------------
 				 
-					wm.JavascriptExecutorClick(driver, gmrImport.TSPicon);Thread.sleep(4000);
-				wm.JavascriptExecutorClick(driver, gmrImport.TSPproceedbtn);Thread.sleep(4000);
-				wm.JavascriptExecutorClick(driver, gmrImport.ShipmentIntegrationApproacgproceedbtn);Thread.sleep(4000);
-				wm.JavascriptExecutorClick(driver, gmrImport.CommodityTypedropdown);Thread.sleep(4000);
-				wm.JavascriptExecutorClick(driver, gmrImport.GeneralCargo);Thread.sleep(4000);
-				//driver.findElement(By.id("ctl00_hldPage_ddlTSPCommodityGroup")).sendKeys("General Cargo");
-				Thread.sleep(4000);
-				wm.JavascriptExecutorClick(driver, gmrImport.CommodityNamedropdown);Thread.sleep(4000);
-				wm.JavascriptExecutorClick(driver, gmrImport.AIRCRAFTAPD);Thread.sleep(4000);
-			  //  driver.findElement(By.id("ctl00_hldPage_ddlComodityTypeName")).sendKeys("AIRCRAFT(APD):GEN");
-			    Thread.sleep(70000);
-			    
-//			    wm.JavascriptExecutorClick(driver,gmrImport.HSNcodtxtbox);Thread.sleep(4000);
-			    JavascriptExecutor js = (JavascriptExecutor) driver;
-
-			    js.executeScript("window.scrollBy(10000,0)");Thread.sleep(4000);
-			  //  TestDataReader.TransactionPassword();
-			   // gmrImport.TransactionPasswordtxtbox.sendKeys(Username); Thread.sleep(4000);
-				gmrImport.TransactionPasswordtxtbox.sendKeys("Kale@123");Thread.sleep(4000);
-				wm.JavascriptExecutorClick(driver, gmrImport.TSPpaynowbtn);Thread.sleep(4000);
-				
-				wm.JavascriptExecutorClick(driver, gmrImport.OK);Thread.sleep(4000);
-				//gmrImport.TransactionPasswordtxtbox.sendKeys("Kale@123");Thread.sleep(4000);
-				//wm.JavascriptExecutorClick(driver, gmrImport.TSPpaynowbtn);Thread.sleep(4000);
+					wm.JavascriptExecutorClick(driver, gmrImport.TSPicon);Thread.sleep(70000);
+//				wm.JavascriptExecutorClick(driver, gmrImport.TSPproceedbtn);Thread.sleep(4000);
+//				wm.JavascriptExecutorClick(driver, gmrImport.ShipmentIntegrationApproacgproceedbtn);Thread.sleep(4000);
+//				
+//				gmrImport.CommodityTypedropdown.click();Thread.sleep(4000);
+//			    gmrImport.GeneralCargo.click();Thread.sleep(4000);
+//				
+//				Thread.sleep(4000);
+//				gmrImport.CommodityNamedropdown.click();Thread.sleep(4000);
+//				gmrImport.AIRCRAFTAPD.click();Thread.sleep(4000);
+//				
+//			   wm.JavascriptExecutorClick(driver,gmrImport.HSNcodtxtbox);Thread.sleep(4000);
+//			   gmrImport.HSNcodtxtbox.sendKeys("1234");Thread.sleep(4000);
+//			    JavascriptExecutor js = (JavascriptExecutor) driver;
+//
+//			    js.executeScript("window.scrollBy(10000,0)");Thread.sleep(4000);
+//			  //  TestDataReader.TransactionPassword();
+//			   // gmrImport.TransactionPasswordtxtbox.sendKeys(Username); Thread.sleep(4000);
+//				gmrImport.TransactionPasswordtxtbox.sendKeys("Kale@APR2425");Thread.sleep(4000);
+//				wm.JavascriptExecutorClick(driver, gmrImport.TSPpaynowbtn);Thread.sleep(4000);
+//				
+//				wm.JavascriptExecutorClick(driver, gmrImport.OK);Thread.sleep(4000);
+			//Thread.sleep(5000);
 				wm.JavascriptExecutorClick(driver, gmrImport.Yesbtn);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.GenerateTSPYesbtn);Thread.sleep(4000);
 				Thread.sleep(80000);
@@ -591,9 +585,9 @@ public class ACS_GMR_Import {
 		//<<<<------------------	Generate Token ---------------------->>>>>>>	
 				
 				
-   //wm.JavascriptExecutorClick(driver, gmrImport.VehicleTokencheckbox);Thread.sleep(4000);
-				
-  //  wm.JavascriptExecutorClick(driver, gmrImport.GeneratetokenTab);Thread.sleep(4000);
+//   wm.JavascriptExecutorClick(driver, gmrImport.VehicleTokencheckbox);Thread.sleep(4000);
+//				
+//    wm.JavascriptExecutorClick(driver, gmrImport.GeneratetokenTab);Thread.sleep(4000);
 				
 		gmrImport.VehicleNo.sendKeys("MH127896");Thread.sleep(4000);
 	
@@ -724,8 +718,19 @@ public class ACS_GMR_Import {
 
 //ACS_GMR_2Import
 
-		@Then("logout with airline ane login with FF.")
-		public void logout_with_airline_ane_login_with_ff() throws Throwable {
+	
+
+	
+
+	@Then("logout with airline ane login with FF and did console DO and in CB login did BOE,Pick order,ooc,BOEASI,TSP")
+	public void logout_with_airline_ane_login_with_ff_and_did_console_do_and_in_cb_login_did_boe_pick_order_ooc_boeasi_tsp() throws Throwable {
+	    
+	
+
+
+
+
+
 			
 			
 				TestDataReader.FFlogin();
@@ -733,13 +738,7 @@ public class ACS_GMR_Import {
 		    gmrImport.Passwordtxtbox.sendKeys(Password); Thread.sleep(4000);
 		    loginScreen.loginbutton.click();Thread.sleep(4000);
 			
-			//gmrImport.MAWBNOInShipmentDetails.click();Thread.sleep(4000);
-			//gmrImport.MAWBNOInShipmentDetails.sendKeys("56789342");Thread.sleep(4000);
 			
-			//gmrImport.MAWBNOInShipmentDetailsDownArrow.click();Thread.sleep(4000);
-			//gmrImport.Contains.click();Thread.sleep(4000);
-			//gmr.AllRadioBtn.click();
-			//Thread.sleep(4000);
 			
 		    wm.JavascriptExecutorClick(driver, gmr.GmrHydRadioOKBtn);Thread.sleep(4000);
 			Thread.sleep(4000);
@@ -1016,22 +1015,22 @@ public class ACS_GMR_Import {
 				
 				
 				
-				//--------------------TSP--------------------------------
+				//--------------------TSP-------do it manually-------------------------
 				 
-				wm.JavascriptExecutorClick(driver, gmrImport.TSPicon);Thread.sleep(4000);
-				wm.JavascriptExecutorClick(driver, gmrImport.TSPproceedbtn);Thread.sleep(4000);
-				//wm.JavascriptExecutorClick(driver, gmrImport.CommodityTypedropdown);Thread.sleep(4000);
-				//wm.JavascriptExecutorClick(driver, gmrImport.GeneralCargo);Thread.sleep(4000);
-				driver.findElement(By.id("ctl00_hldPage_ddlTSPCommodityGroup")).sendKeys("General Cargo");
-				Thread.sleep(4000);
-				//wm.JavascriptExecutorClick(driver, gmrImport.CommodityNamedropdown);Thread.sleep(4000);
-				//wm.JavascriptExecutorClick(driver, gmrImport.AIRCRAFTAPD);Thread.sleep(4000);
-			    driver.findElement(By.id("ctl00_hldPage_ddlComodityTypeName")).sendKeys("AIRCRAFT(APD):GEN");
-			    Thread.sleep(4000);
-			    gmrImport.HSNcodtxtbox.sendKeys("567865");Thread.sleep(4000);
-			    TestDataReader.TransactionPassword();
-			    gmrImport.TransactionPasswordtxtbox.sendKeys(Username); Thread.sleep(4000);
-				wm.JavascriptExecutorClick(driver, gmrImport.TSPpaynowbtn);Thread.sleep(4000);
+				wm.JavascriptExecutorClick(driver, gmrImport.TSPicon);Thread.sleep(70000);
+//				wm.JavascriptExecutorClick(driver, gmrImport.TSPproceedbtn);Thread.sleep(4000);
+//				//wm.JavascriptExecutorClick(driver, gmrImport.CommodityTypedropdown);Thread.sleep(4000);
+//				//wm.JavascriptExecutorClick(driver, gmrImport.GeneralCargo);Thread.sleep(4000);
+//				driver.findElement(By.id("ctl00_hldPage_ddlTSPCommodityGroup")).sendKeys("General Cargo");
+//				Thread.sleep(4000);
+//				//wm.JavascriptExecutorClick(driver, gmrImport.CommodityNamedropdown);Thread.sleep(4000);
+//				//wm.JavascriptExecutorClick(driver, gmrImport.AIRCRAFTAPD);Thread.sleep(4000);
+//			    driver.findElement(By.id("ctl00_hldPage_ddlComodityTypeName")).sendKeys("AIRCRAFT(APD):GEN");
+//			    Thread.sleep(4000);
+//			    gmrImport.HSNcodtxtbox.sendKeys("567865");Thread.sleep(4000);
+//			    TestDataReader.TransactionPassword();
+//			    gmrImport.TransactionPasswordtxtbox.sendKeys(Username); Thread.sleep(4000);
+//				wm.JavascriptExecutorClick(driver, gmrImport.TSPpaynowbtn);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.Yesbtn);Thread.sleep(4000);
 				wm.JavascriptExecutorClick(driver, gmrImport.GenerateTSPYesbtn);Thread.sleep(4000);
 				
@@ -1104,6 +1103,7 @@ public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_
 	gmrImport.firstaddshipchkbox.click();Thread.sleep(4000);
 	//driver.switchTo().defaultContent();Thread.sleep(4000);
 	gmrImport.Addbtn.click();Thread.sleep(4000);
+	//gmrImport.AddOKbtn.click();Thread.sleep(4000);
 	driver.switchTo().defaultContent();Thread.sleep(4000);
 	
 	
@@ -1115,7 +1115,8 @@ public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_
 	
 	
 	wm.JavascriptExecutorClick(driver, gmrImport.GeneratetokenBtn);Thread.sleep(4000);
-	gmrImport.OKbtn.click();Thread.sleep(4000);
+	//gmrImport.OKbtn.click();Thread.sleep(4000);
+	wm.JavascriptExecutorClick(driver, gmrImport.OKbtn);Thread.sleep(4000);
 	
 	
 	
