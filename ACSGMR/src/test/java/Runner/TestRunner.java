@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 	                		 "rerun:Rerun/rerun1.txt" },
 	                 		
 
-	                 tags ="@ACS_GMR_1Import")
+	                 tags ="@ACS_GMR_2Import")
 
 public class TestRunner {
 		

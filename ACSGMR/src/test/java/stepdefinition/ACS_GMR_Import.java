@@ -82,8 +82,8 @@ public class ACS_GMR_Import {
 	gmr.AllRadioBtn.click();
 	Thread.sleep(4000);
 	
-	gmr.GmrHydRadioOKBtn.click();
-	Thread.sleep(4000);
+	//gmr.GmrHydRadioOKBtn.click();
+	//Thread.sleep(4000);
 	
 	wm.JavascriptExecutorClick(driver, gmrImport.Imports);Thread.sleep(4000);
 	
@@ -222,7 +222,7 @@ public class ACS_GMR_Import {
 	
 		wm.JavascriptExecutorClick(driver, gmrImport.ShipmentDetails);Thread.sleep(4000);
 		
-		wm.JavascriptExecutorClick(driver, gmrImport.ShipmentDetailscheckbox);Thread.sleep(4000);  
+		wm.JavascriptExecutorClick(driver, gmrImport.ShipmentDetailscheckbox);Thread.sleep(4000); 
 		
 		
 	}
@@ -272,7 +272,7 @@ public class ACS_GMR_Import {
 			    
 			
 			
-				wm.JavascriptExecutorClick(driver, gmrImport.WeightVerification);Thread.sleep(4000);
+			wm.JavascriptExecutorClick(driver, gmrImport.WeightVerification);Thread.sleep(4000);
 		
 		wm.JavascriptExecutorClick(driver, gmrImport.WeightVerificationUploadDocs);Thread.sleep(4000);
 		
@@ -393,7 +393,7 @@ public class ACS_GMR_Import {
 	   
 	    //gmrImport.CloseBtn.click();Thread.sleep(4000);
 	    
-		   TestDataReader.CBloginAadhya();
+		  TestDataReader.CBloginAadhya();
 	    gmrImport.Usernametxtbox.sendKeys(Username); Thread.sleep(4000);
 	    gmrImport.Passwordtxtbox.sendKeys(Password); Thread.sleep(4000);
 	    loginScreen.loginbutton.click();Thread.sleep(4000);
@@ -475,6 +475,7 @@ public class ACS_GMR_Import {
 			wm.JavascriptExecutorClick(driver, gmrImport.BillEntryDetailsSaveBtn);Thread.sleep(4000);
 			wm.JavascriptExecutorClick(driver, gmrImport.BillEntryBackbtn);Thread.sleep(4000);
 			wm.JavascriptExecutorClick(driver, gmrImport.SavemsgOkbtn);Thread.sleep(4000);
+	
 	  }
 	
 		@Then("user should be able to do Pick Order for Direct\\/Consol Shipment")
@@ -591,9 +592,9 @@ public class ACS_GMR_Import {
 		//<<<<------------------	Generate Token ---------------------->>>>>>>	
 				
 				
-   //wm.JavascriptExecutorClick(driver, gmrImport.VehicleTokencheckbox);Thread.sleep(4000);
+   wm.JavascriptExecutorClick(driver, gmrImport.VehicleTokencheckbox);Thread.sleep(4000);
 				
-  //  wm.JavascriptExecutorClick(driver, gmrImport.GeneratetokenTab);Thread.sleep(4000);
+    wm.JavascriptExecutorClick(driver, gmrImport.GeneratetokenTab);Thread.sleep(4000);
 				
 		gmrImport.VehicleNo.sendKeys("MH127896");Thread.sleep(4000);
 	
@@ -612,7 +613,7 @@ public class ACS_GMR_Import {
 	 wm.JavascriptExecutorClick(driver, gmrImport.GeneratetokenBtn);Thread.sleep(4000);
 	
 	gmrImport.OKbtn.click();Thread.sleep(4000);
-	//gmrImport.VehicleDetailsAdd.click();Thread.sleep(4000);
+	gmrImport.VehicleDetailsAdd.click();Thread.sleep(4000);
 	}
 	
  @Then("user should be able to view Complete icon for Dock In\\/Dock Out on Track and Trace screen when the CTO perform Dock In\\/Dock Out activity.")
@@ -622,7 +623,7 @@ public class ACS_GMR_Import {
 	
 	//----------------------------E-Docket-----------------------------------------------------------
 	
-	gmrImport.eDocketIcon.click();Thread.sleep(4000);
+	//gmrImport.eDocketIcon.click();Thread.sleep(4000);
  }
 	@Then("To check whether the system displays proper status for ARR,RCF,NFD,ADO,DI,Consol DO, BoE, RFE,FFE,OOC, TSP,VT,GD with proper date and timestamp.")
 	public void to_check_whether_the_system_displays_proper_status_for_arr_rcf_nfd_ado_di_consol_do_bo_e_rfe_ffe_ooc_tsp_vt_gd_with_proper_date_and_timestamp() throws InterruptedException {
@@ -717,6 +718,8 @@ public class ACS_GMR_Import {
 	Thread.sleep(4000);
 	
 	gmrImport.Ecustom.click();Thread.sleep(4000);
+		Thread.sleep(5000);
+		
 	
 	}
 	
@@ -1187,6 +1190,7 @@ public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_
 	Thread.sleep(4000);
 	
 	gmrImport.Ecustom.click();Thread.sleep(4000);
+		Thread.sleep(7000);
 	
 	}
 
@@ -1489,7 +1493,7 @@ public void to_check_if_user_is_able_to_create_single_vt_for_multiple_bo_e_from_
 					
 //	    wm.JavascriptExecutorClick(driver, gmrImport.GeneratetokenTab);Thread.sleep(4000);
 					
-			    		gmrImport.VehicleNo.sendKeys("MH127896");Thread.sleep(4000);
+			gmrImport.VehicleNo.sendKeys("MH127896");Thread.sleep(4000);
 		
 		gmrImport.DriverLicenseNo.sendKeys("MH7896");Thread.sleep(4000);
 		

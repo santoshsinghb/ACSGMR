@@ -350,7 +350,13 @@ public class ACS_GMR_Xpath extends Pages.BasePage {
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_mltSlctCHA_1']")
 	public WebElement QuickASIAssignCHAAdhyaLogistics;
 	
-	@FindBy(xpath = "/html/body/form/div[4]/div[4]/div/div[2]/div[6]/div[4]/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td[12]/table/tbody/tr/td/div/div[1]/div[2]/span")
+	@FindBy(xpath = "(//*[@id='CBbtn'])/parent::div/div[2]/input")
+	public WebElement QuickASIAssignCHA1_Search;
+	
+	@FindBy(xpath = "(//label[text()='AADHYA BONDED TRUCKER'])")
+	public WebElement Aadhya_Bonded_Trucker;
+	
+	@FindBy(xpath = "//*[@id='CBbtn']")
 	public WebElement QuickASIAssignCHA1;
 	
 	@FindBy(xpath = "//*[@id='ctl00_hldPage_txtCargoDesc']")

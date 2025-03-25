@@ -16,7 +16,7 @@ public class Constants {
 	public static final String MasterDataSheet="Type";
 	public static final String ChromeDriverPath = "Drivers/chromedriver.exe";
 	public static final String TestDataFile = "TestData/DnataStock_TestData.xlsx";
-	public static final String URL="https://acsdemo.upliftindia.com/ACS_GMR_STG/UI/UpliftLogin.aspx";
+	public static final String URL="https://acsdemo.upliftindia.com/ACS_GMR_STG/UI/Upliftlogin.aspx";
 	
 	//https://acsint.kalelogistics.com/login
 	

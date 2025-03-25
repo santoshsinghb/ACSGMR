@@ -47,10 +47,10 @@ import io.cucumber.java.en.When;
 
 public class ACS_GMR_QuickASI {
 	
-	private static final CharSequence AWB_QUICKASI_DIRECT_BONDED = "76632452";
-	private static final CharSequence AWB_QUICKASI_DIRECT_NONBONDED = "76687656";
-	private static final CharSequence AWB_QUICKASI_CONSOLE_BONDED = "87656715";
-	private static final CharSequence AWB_QUICKASI_CONSOLE_NONBONDED = "87656785";
+	private static final CharSequence AWB_QUICKASI_DIRECT_BONDED = "11102416";
+	private static final CharSequence AWB_QUICKASI_DIRECT_NONBONDED = "11102453";
+	private static final CharSequence AWB_QUICKASI_CONSOLE_BONDED = "11102431";
+	private static final CharSequence AWB_QUICKASI_CONSOLE_NONBONDED = "11102442";
 
 	private static final String WebElement = null;
 	private static final WebDriver Driver = null;
@@ -73,8 +73,8 @@ public class ACS_GMR_QuickASI {
 		gmr.AllRadioBtn.click();
 		Thread.sleep(2000);
 		
-		gmr.GmrHydRadioOKBtn.click();
-		Thread.sleep(2000);
+		//gmr.GmrHydRadioOKBtn.click();
+		//Thread.sleep(2000);
 		
 		//--------------------------Quick ASI For Direct Non Bonded-------------------------------------------------------
 		
@@ -185,7 +185,7 @@ public class ACS_GMR_QuickASI {
 		
 		Thread.sleep(8000);
 
-		wm.driver.get("https://acsdemo.upliftindia.com/ACS_GMR_STG/UI/UpliftLogin.aspx");
+		wm.driver.get("https://acsdemo.upliftindia.com/ACS_GMR_STG/UI/Upliftlogin.aspx");
 
 		Thread.sleep(8000);
 		}
@@ -227,7 +227,6 @@ public class ACS_GMR_QuickASI {
 			
 			wm.JavascriptExecutorClick(driver, gmr.AirlineLogoutQuickASI);
 			Thread.sleep(2000);
-			
 		
 	}
 		
@@ -424,8 +423,10 @@ public class ACS_GMR_QuickASI {
 //			
 //		 wm.JavascriptExecutorClick(driver, gmr.ActionTab);Thread.sleep(2000);
 //		 wm.JavascriptExecutorClick(driver, gmr.CopyAWBConfirmationYesBtnQuickASI);
-//		 Thread.sleep(2000);
-//		
+//		 Thread.sleep(2000);...
+			//Thread.sleep(700000);
+			
+	
 		}
 		
 		//----------------------------Quick ASI Direct Bonded-------------------------------------------------------------------
@@ -742,6 +743,7 @@ public class ACS_GMR_QuickASI {
 //					wm.JavascriptExecutorClick(driver, gmr.TSPPayNow);Thread.sleep(3000);
 //					wm.JavascriptExecutorClick(driver, gmr.PaymentConfimationOkBtn);Thread.sleep(3000);
 //					wm.JavascriptExecutorClick(driver, gmr.TokenConfimationOkBtn);Thread.sleep(3000);
+			
 			}
 			@Then("^Able to generate single VT for 2 different AWB ACS_GMR QuickASI Direct Bonded$")
 			public void able_to_generate_single_VT_for_2_different_AWB_ACS_GMR_QuickASI_Direct_Bonded() throws InterruptedException, AWTException{ 
@@ -813,7 +815,10 @@ public class ACS_GMR_QuickASI {
 //				
 //				wm.JavascriptExecutorClick(driver, gmr.ActionTab);Thread.sleep(2000);
 //				wm.JavascriptExecutorClick(driver, gmr.CopyAWBConfirmationYesBtnQuickASI);Thread.sleep(2000);
-//				
+				
+				//Thread.sleep(800000);
+				
+				
 			}
 			
 			//-----------------Quick ASI Console Non Bonded-------------------------------------------------------------
@@ -1131,104 +1136,108 @@ public class ACS_GMR_QuickASI {
 			
 				//---------------------------------Edocket-------------------------------------------
 				
-//				gmr.EDocket();
-//				
+				gmr.EDocket();
+				
 //				//---------------------------TSP---------------------------------------------------------------------------
-//						
-//				wm.JavascriptExecutorClick(driver, gmr.SBDetailsQuickASI);Thread.sleep(4000);
-//				wm.JavascriptExecutorClick(driver, gmr.SBDetailsTSP);Thread.sleep(4000);
-//					
-//						
-//						
-//				Select cargotypes = new Select(driver.findElement(By.id("ctl00_hldPage_ddlTypeTxt")));  
-//				cargotypes.selectByVisibleText("General Cargo"); Thread.sleep(2000); 
-//						
-//				WebElement comname = driver.findElement(By.id("ctl00_hldPage_ddlComodityTypeName"));
-//				Actions ct1 = new Actions(driver);
-//			    ct1.click(comname);
-//				Action comnameaction  = ct1.build();
-//			    comnameaction.perform();Thread.sleep(5000);  
-//					      
-//				Robot robot=new Robot();
-//				robot.keyPress(KeyEvent.VK_DOWN);
-//			    robot.keyPress(KeyEvent.VK_ENTER);
-//				robot.keyRelease(KeyEvent.VK_DOWN);
-//			    robot.keyRelease(KeyEvent.VK_ENTER);
-//			    Thread.sleep(2000);
-//					      
-//						
-//			   wm.JavascriptExecutorClick(driver, gmr.HSNCode);Thread.sleep(2000);
-//						
-//			   wm.JavascriptExecutorClick(driver, gmr.TransactionPaswrd);Thread.sleep(2000);
-//			   gmr.TransactionPaswrd.sendKeys("Kale@JAN20241");Thread.sleep(2000);
-//						
-//			   wm.JavascriptExecutorClick(driver, gmr.TSPPayNow);Thread.sleep(2000);
-//			   wm.JavascriptExecutorClick(driver, gmr.PaymentConfimationOkBtn);Thread.sleep(2000);
-//			   wm.JavascriptExecutorClick(driver, gmr.TokenConfimationOkBtn);Thread.sleep(2000);
-//						
-//			//-------------------------------Vehicle Token----------------------------------------------------------
-//						//wm.JavascriptExecutorClick(driver, gmr.SBDetails);Thread.sleep(4000);//---------kadun takne
-//						//wm.JavascriptExecutorClick(driver, gmr.VehicleToken);Thread.sleep(2000);
-//			   wm.JavascriptExecutorClick(driver, gmr.VehicleNumber);Thread.sleep(2000);
-//			   wm.JavascriptExecutorClick(driver, gmr.VehicleNumber);Thread.sleep(2000);
-//			   gmr.VehicleNumber.sendKeys("23456");
-//			   wm.JavascriptExecutorClick(driver, gmr.DriverLicenseNo);Thread.sleep(2000);
-//			   gmr.DriverLicenseNo.sendKeys("MH12-3036");
-//			   wm.JavascriptExecutorClick(driver, gmr.DriverName);Thread.sleep(2000);
-//			   gmr.DriverName.sendKeys("Jordhen");
-//			   wm.JavascriptExecutorClick(driver, gmr.DriverMobileNo);Thread.sleep(2000);
-//			   gmr.DriverMobileNo.sendKeys(cm.RandomNo(10));
-//			   wm.JavascriptExecutorClick(driver, gmr.AgentMobileNo);Thread.sleep(2000);
-//			   gmr.AgentMobileNo.sendKeys(cm.RandomNo(10));
-//			   wm.JavascriptExecutorClick(driver, gmr.GenerateToken);Thread.sleep(2000);
-//			   wm.JavascriptExecutorClick(driver, gmr.VehicleTokenConfimationOkBtn);Thread.sleep(2000);
-//						
-//			//-----------------------------------Cons AWB List------------------
-//						
-//			   wm.JavascriptExecutorClick(driver, gmr.ConsAWBList);Thread.sleep(2000);
-//						
-//			   driver.switchTo().frame("IframEdocket");
-//			   Thread.sleep(1000);
-//						
-//			   wm.JavascriptExecutorClick(driver, gmr.MenifestToAirlineEmail);Thread.sleep(2000);
-//			   gmr.MenifestToAirlineEmail.sendKeys("Swaranjali.Kharat@Kalelogistics.com");Thread.sleep(2000);
-//						
-//			   wm.JavascriptExecutorClick(driver, gmr.SendEmailBtn);Thread.sleep(2000);
-//						
-//			   wm.JavascriptExecutorClick(driver, gmr.SendEmailCloseBtn);Thread.sleep(2000);
-//			   driver.switchTo().defaultContent();
-//			   Thread.sleep(4000);
-//					
-//			//------------------------------------------ACS Receipt-------------------------------------------
-//					
-//			   wm.JavascriptExecutorClick(driver, gmr.ACSReceipt);Thread.sleep(1000);
-//					
-//			   Set<String> allwindowid = driver.getWindowHandles();
-//			   Object[] windows = allwindowid.toArray();
-//			   String window2 = windows[0].toString();        
-//			   driver.switchTo().window(window2); 
-//			   System.out.println(allwindowid);
-//			   System.out.println(window2);
-//			   Thread.sleep(5000);
-//				    
-//			    String window1 = windows[0].toString();
-//				driver.switchTo().window(window1);
-//				System.out.println(window1);
-//				Thread.sleep(5000);
-//
-//			 //---------------------------------------------Action-----------------------------------------------
-//				    
-//				   // wm.JavascriptExecutorClick(driver, gmr.EditMAWBActionTab);Thread.sleep(2000);
-//				    
-//				    //wm.JavascriptExecutorClick(driver, gmr.EditMAWBActionTabSave);Thread.sleep(2000);
-//				    
-//				    //wm.JavascriptExecutorClick(driver, gmr.EditMAWBActionTabSavePopup);Thread.sleep(2000);
-//					
-//			  wm.JavascriptExecutorClick(driver, gmr.ActionTab);Thread.sleep(2000);
-//			  wm.JavascriptExecutorClick(driver, gmr.CopyAWBConfirmationYesBtnQuickASI);
-//			  Thread.sleep(2000);
-//			
-//					//gmr.AdvikLogout();
+						
+				wm.JavascriptExecutorClick(driver, gmr.SBDetailsQuickASI);Thread.sleep(4000);
+				wm.JavascriptExecutorClick(driver, gmr.SBDetailsTSP);Thread.sleep(4000);
+					
+						
+						
+				Select cargotypes = new Select(driver.findElement(By.id("ctl00_hldPage_ddlTypeTxt")));  
+				cargotypes.selectByVisibleText("General Cargo"); Thread.sleep(2000); 
+						
+				WebElement comname = driver.findElement(By.id("ctl00_hldPage_ddlComodityTypeName"));
+				Actions ct1 = new Actions(driver);
+			    ct1.click(comname);
+				Action comnameaction  = ct1.build();
+			    comnameaction.perform();Thread.sleep(5000);  
+					      
+				Robot robot=new Robot();
+				robot.keyPress(KeyEvent.VK_DOWN);
+			    robot.keyPress(KeyEvent.VK_ENTER);
+				robot.keyRelease(KeyEvent.VK_DOWN);
+			    robot.keyRelease(KeyEvent.VK_ENTER);
+			    Thread.sleep(2000);
+					      
+						
+			   wm.JavascriptExecutorClick(driver, gmr.HSNCode);Thread.sleep(2000);
+						
+			   wm.JavascriptExecutorClick(driver, gmr.TransactionPaswrd);Thread.sleep(2000);
+			   gmr.TransactionPaswrd.sendKeys("Kale@JAN20241");Thread.sleep(2000);
+						
+			   wm.JavascriptExecutorClick(driver, gmr.TSPPayNow);Thread.sleep(2000);
+			   wm.JavascriptExecutorClick(driver, gmr.PaymentConfimationOkBtn);Thread.sleep(2000);
+			   wm.JavascriptExecutorClick(driver, gmr.TokenConfimationOkBtn);Thread.sleep(2000);
+						
+			//-------------------------------Vehicle Token----------------------------------------------------------
+						//wm.JavascriptExecutorClick(driver, gmr.SBDetails);Thread.sleep(4000);//---------kadun takne
+						//wm.JavascriptExecutorClick(driver, gmr.VehicleToken);Thread.sleep(2000);
+			   wm.JavascriptExecutorClick(driver, gmr.VehicleNumber);Thread.sleep(2000);
+			   wm.JavascriptExecutorClick(driver, gmr.VehicleNumber);Thread.sleep(2000);
+			   gmr.VehicleNumber.sendKeys("23456");
+			   wm.JavascriptExecutorClick(driver, gmr.DriverLicenseNo);Thread.sleep(2000);
+			   gmr.DriverLicenseNo.sendKeys("MH12-3036");
+			   wm.JavascriptExecutorClick(driver, gmr.DriverName);Thread.sleep(2000);
+			   gmr.DriverName.sendKeys("Jordhen");
+			   wm.JavascriptExecutorClick(driver, gmr.DriverMobileNo);Thread.sleep(2000);
+			   gmr.DriverMobileNo.sendKeys(cm.RandomNo(10));
+			   wm.JavascriptExecutorClick(driver, gmr.AgentMobileNo);Thread.sleep(2000);
+			   gmr.AgentMobileNo.sendKeys(cm.RandomNo(10));
+			   wm.JavascriptExecutorClick(driver, gmr.GenerateToken);Thread.sleep(2000);
+			   wm.JavascriptExecutorClick(driver, gmr.VehicleTokenConfimationOkBtn);Thread.sleep(2000);
+						
+			//-----------------------------------Cons AWB List------------------
+						
+			   wm.JavascriptExecutorClick(driver, gmr.ConsAWBList);Thread.sleep(2000);
+						
+			   driver.switchTo().frame("IframEdocket");
+			   Thread.sleep(1000);
+						
+			   wm.JavascriptExecutorClick(driver, gmr.MenifestToAirlineEmail);Thread.sleep(2000);
+			   gmr.MenifestToAirlineEmail.sendKeys("Swaranjali.Kharat@Kalelogistics.com");Thread.sleep(2000);
+						
+			   wm.JavascriptExecutorClick(driver, gmr.SendEmailBtn);Thread.sleep(2000);
+						
+			   wm.JavascriptExecutorClick(driver, gmr.SendEmailCloseBtn);Thread.sleep(2000);
+			   driver.switchTo().defaultContent();
+			   Thread.sleep(4000);
+					
+			//------------------------------------------ACS Receipt-------------------------------------------
+					
+			   wm.JavascriptExecutorClick(driver, gmr.ACSReceipt);Thread.sleep(1000);
+					
+			   Set<String> allwindowid = driver.getWindowHandles();
+			   Object[] windows = allwindowid.toArray();
+			   String window2 = windows[0].toString();        
+			   driver.switchTo().window(window2); 
+			   System.out.println(allwindowid);
+			   System.out.println(window2);
+			   Thread.sleep(5000);
+				    
+			    String window1 = windows[0].toString();
+				driver.switchTo().window(window1);
+				System.out.println(window1);
+				Thread.sleep(5000);
+
+			 //---------------------------------------------Action-----------------------------------------------
+				    
+				   // wm.JavascriptExecutorClick(driver, gmr.EditMAWBActionTab);Thread.sleep(2000);
+				    
+				    //wm.JavascriptExecutorClick(driver, gmr.EditMAWBActionTabSave);Thread.sleep(2000);
+				    
+				    //wm.JavascriptExecutorClick(driver, gmr.EditMAWBActionTabSavePopup);Thread.sleep(2000);
+					
+			  wm.JavascriptExecutorClick(driver, gmr.ActionTab);Thread.sleep(2000);
+			  wm.JavascriptExecutorClick(driver, gmr.CopyAWBConfirmationYesBtnQuickASI);
+			  Thread.sleep(2000);
+			
+					//gmr.AdvikLogout();
+				//	Thread.sleep(700000);
+					
+					
+					
 }
 				
            //------------------Quick ASI Console Bonded----------------------------------------------------------
@@ -1287,7 +1296,12 @@ public class ACS_GMR_QuickASI {
 				gmr.QuickASIFlightNo.sendKeys("1234");Thread.sleep(2000);
 				
 				
-				//wm.JavascriptExecutorClick(driver, gmr.QuickASIAssignCHA1);Thread.sleep(2000);
+				wm.JavascriptExecutorClick(driver, gmr.QuickASIAssignCHA1);Thread.sleep(2000);
+				wm.JavascriptExecutorClick(driver, gmr.QuickASIAssignCHA1_Search);Thread.sleep(4000);
+				
+				gmr.QuickASIAssignCHA1_Search.sendKeys("Aadhya bonded Trucker");Thread.sleep(2000);
+				wm.JavascriptExecutorClick(driver, gmr.Aadhya_Bonded_Trucker);Thread.sleep(4000);
+				
 				
 				WebElement natureofgoods1 = driver.findElement(By.id("ctl00_hldPage_txtCargoDesc"));
 			    Actions natureofgoodsob1 = new Actions(driver);
@@ -1299,7 +1313,7 @@ public class ACS_GMR_QuickASI {
 			    Thread.sleep(2000);
 				
 				Select bondedtruckerQuickASI = new Select(driver.findElement(By.id("ctl00_hldPage_ddlBondedTruckers")));  
-				bondedtruckerQuickASI.selectByVisibleText("AADHYA BONDED TRUCKER");Thread.sleep(2000);
+				bondedtruckerQuickASI.selectByVisibleText("AADHYA BONDED TRUCKER");Thread.sleep(4000);
 
 				
 				wm.JavascriptExecutorClick(driver, gmr.QuickASISave);Thread.sleep(2000);
@@ -1345,6 +1359,7 @@ public class ACS_GMR_QuickASI {
 				
 				
 				wm.JavascriptExecutorClick(driver, gmr.SavePopupHAWBAddBtnQuickASI);Thread.sleep(2000);
+	               
 	}
 @Then("^For Bonded shipments verify whether the user is able to sent the CO request to Bonded Trucker ACS_GMR QuickASI Console Bonded$")
 public void For_Bonded_shipments_verify_whether_the_user_is_able_to_sent_the_CO_request_to_Bonded_Trucker_ACS_GMR_QuickASI_Console_Bonded() throws InterruptedException, AWTException {
@@ -1352,15 +1367,15 @@ public void For_Bonded_shipments_verify_whether_the_user_is_able_to_sent_the_CO_
 	//wm.JavascriptExecutorClick(driver, gmr.ClearFilterQuickASI);Thread.sleep(2000);
 	//-------------------------------MAWB List Tab-------------------------------------------------
 	
-//	wm.JavascriptExecutorClick(driver, gmr.MAWBListInput);Thread.sleep(2000);
-//	
-//	gmr.MAWBListInput.sendKeys(AWB_QUICKASI_CONSOLE_BONDED);
-//	Thread.sleep(2000);
-//	
-//	gmr.MAWBListInputDownArrow.click();Thread.sleep(2000);
-//	
-//	gmr.Contains.click();Thread.sleep(4000);
-//	
+	wm.JavascriptExecutorClick(driver, gmr.MAWBListInput);Thread.sleep(2000);
+	
+	gmr.MAWBListInput.sendKeys(AWB_QUICKASI_CONSOLE_BONDED);
+	Thread.sleep(2000);
+	
+	gmr.MAWBListInputDownArrow.click();Thread.sleep(2000);
+	
+	gmr.Contains.click();Thread.sleep(4000);
+	
 	
 	gmr.MawbASI.click();Thread.sleep(2000);
 	wm.JavascriptExecutorClick(driver, gmr.MawbASIOkBtn);Thread.sleep(1000);
@@ -1523,108 +1538,112 @@ public void For_Bonded_shipments_verify_whether_the_user_is_able_to_sent_the_CO_
 
 	//---------------------------------Edocket-------------------------------------------
 	
-//	gmr.EDocket();
-//	Thread.sleep(2000);
-//	
-//	//---------------------------TSP---------------------------------------------------------------------------
-//			
-//			wm.JavascriptExecutorClick(driver, gmr.SBDetailsQuickASI);Thread.sleep(4000);
-//			wm.JavascriptExecutorClick(driver, gmr.SBDetailsTSP);Thread.sleep(4000);
-//		
-//			
-//			
-//			Select cargotypes = new Select(driver.findElement(By.id("ctl00_hldPage_ddlTypeTxt")));  
-//			cargotypes.selectByVisibleText("Human Remains"); Thread.sleep(2000); 
-//			
-//			WebElement comname = driver.findElement(By.id("ctl00_hldPage_ddlComodityTypeName"));
-//		      Actions ct1 = new Actions(driver);
-//		      ct1.click(comname);
-//		      Action comnameaction  = ct1.build();
-//		      comnameaction.perform();Thread.sleep(5000);  
-//		      
-//		      Robot robot=new Robot();
-//		       robot.keyPress(KeyEvent.VK_DOWN);
-//		       robot.keyPress(KeyEvent.VK_ENTER);
-//		       //robot.keyRelease(KeyEvent.VK_DOWN);
-//		       //robot.keyRelease(KeyEvent.VK_ENTER);
-//		     
-//		      Thread.sleep(2000);
-//		      
-//			
-//		      wm.JavascriptExecutorClick(driver, gmr.HSNCode);Thread.sleep(2000);
-//			
-//			wm.JavascriptExecutorClick(driver, gmr.TransactionPaswrd);Thread.sleep(2000);
-//			gmr.TransactionPaswrd.sendKeys("12345678");Thread.sleep(2000);
-//			
-//			wm.JavascriptExecutorClick(driver, gmr.TSPPayNow);Thread.sleep(2000);
-//			wm.JavascriptExecutorClick(driver, gmr.PaymentConfimationOkBtn);Thread.sleep(2000);
-//			wm.JavascriptExecutorClick(driver, gmr.TokenConfimationOkBtn);Thread.sleep(2000);
-//			
-//			//-------------------------------Vehicle Token----------------------------------------------------------
-//			//wm.JavascriptExecutorClick(driver, gmr.SBDetails);Thread.sleep(4000);//---------kadun takne
-//			//wm.JavascriptExecutorClick(driver, gmr.VehicleToken);Thread.sleep(2000);
-//			wm.JavascriptExecutorClick(driver, gmr.VehicleNumber);Thread.sleep(2000);
-//			wm.JavascriptExecutorClick(driver, gmr.VehicleNumber);Thread.sleep(2000);
-//			gmr.VehicleNumber.sendKeys("23456");
-//			wm.JavascriptExecutorClick(driver, gmr.DriverLicenseNo);Thread.sleep(2000);
-//			gmr.DriverLicenseNo.sendKeys("MH12-3036");
-//			wm.JavascriptExecutorClick(driver, gmr.DriverName);Thread.sleep(2000);
-//			gmr.DriverName.sendKeys("Jordhen");
-//			wm.JavascriptExecutorClick(driver, gmr.DriverMobileNo);Thread.sleep(2000);
-//			gmr.DriverMobileNo.sendKeys(cm.RandomNo(10));
-//			wm.JavascriptExecutorClick(driver, gmr.AgentMobileNo);Thread.sleep(2000);
-//			gmr.AgentMobileNo.sendKeys(cm.RandomNo(10));
-//			wm.JavascriptExecutorClick(driver, gmr.GenerateToken);Thread.sleep(2000);
-//			wm.JavascriptExecutorClick(driver, gmr.VehicleTokenConfimationOkBtn);Thread.sleep(2000);
-//			
-//			
-//			
-//			
-//			//-----------------------------------Cons AWB List------------------
-//			
-//			wm.JavascriptExecutorClick(driver, gmr.ConsAWBList);Thread.sleep(2000);
-//			
-//			driver.switchTo().frame("IframEdocket");
-//			Thread.sleep(1000);
-//			
-//			wm.JavascriptExecutorClick(driver, gmr.MenifestToAirlineEmail);Thread.sleep(2000);
-//			gmr.MenifestToAirlineEmail.sendKeys("Swaranjali.Kharat@Kalelogistics.com");Thread.sleep(2000);
-//			
-//			wm.JavascriptExecutorClick(driver, gmr.SendEmailBtn);Thread.sleep(2000);
-//			
-//			wm.JavascriptExecutorClick(driver, gmr.SendEmailCloseBtn);Thread.sleep(2000);
-//			driver.switchTo().defaultContent();
-//			Thread.sleep(4000);
-//		
-//		//------------------------------------------ACS Receipt-------------------------------------------
-//		wm.JavascriptExecutorClick(driver, gmr.ACSReceipt);Thread.sleep(1000);
-//		
-//		Set<String> allwindowid = driver.getWindowHandles();
-//	    Object[] windows = allwindowid.toArray();
-//	    String window2 = windows[0].toString();        
-//	    driver.switchTo().window(window2); 
-//	    System.out.println(allwindowid);
-//	    System.out.println(window2);
-//	    Thread.sleep(5000);
-//	    
-//	    String window1 = windows[0].toString();
-//	    driver.switchTo().window(window1);
-//	    System.out.println(window1);
-//	    Thread.sleep(5000);
-//
-//
-//		
-//		//---------------------------------------------Action-----------------------------------------------
-//	    
-//	   // wm.JavascriptExecutorClick(driver, gmr.EditMAWBActionTab);Thread.sleep(2000);
-//	    
-//	    //wm.JavascriptExecutorClick(driver, gmr.EditMAWBActionTabSave);Thread.sleep(2000);
-//	    
-//	    //wm.JavascriptExecutorClick(driver, gmr.EditMAWBActionTabSavePopup);Thread.sleep(2000);
-//		
-//		wm.JavascriptExecutorClick(driver, gmr.ActionTab);Thread.sleep(2000);
-//		wm.JavascriptExecutorClick(driver, gmr.CopyAWBConfirmationYesBtnQuickASI);
-//		Thread.sleep(20000);
+	gmr.EDocket();
+	Thread.sleep(2000);
+	
+	//---------------------------TSP---------------------------------------------------------------------------
+			
+			wm.JavascriptExecutorClick(driver, gmr.SBDetailsQuickASI);Thread.sleep(4000);
+			wm.JavascriptExecutorClick(driver, gmr.SBDetailsTSP);Thread.sleep(4000);
+		
+			
+			
+			Select cargotypes = new Select(driver.findElement(By.id("ctl00_hldPage_ddlTypeTxt")));  
+			cargotypes.selectByVisibleText("Human Remains"); Thread.sleep(2000); 
+			
+			WebElement comname = driver.findElement(By.id("ctl00_hldPage_ddlComodityTypeName"));
+		      Actions ct1 = new Actions(driver);
+		      ct1.click(comname);
+		      Action comnameaction  = ct1.build();
+		      comnameaction.perform();Thread.sleep(5000);  
+		      
+		      Robot robot=new Robot();
+		       robot.keyPress(KeyEvent.VK_DOWN);
+		       robot.keyPress(KeyEvent.VK_ENTER);
+		       //robot.keyRelease(KeyEvent.VK_DOWN);
+		       //robot.keyRelease(KeyEvent.VK_ENTER);
+		     
+		      Thread.sleep(2000);
+		      
+			
+		      wm.JavascriptExecutorClick(driver, gmr.HSNCode);Thread.sleep(2000);
+			
+			wm.JavascriptExecutorClick(driver, gmr.TransactionPaswrd);Thread.sleep(2000);
+			gmr.TransactionPaswrd.sendKeys("12345678");Thread.sleep(2000);
+			
+			wm.JavascriptExecutorClick(driver, gmr.TSPPayNow);Thread.sleep(2000);
+			wm.JavascriptExecutorClick(driver, gmr.PaymentConfimationOkBtn);Thread.sleep(2000);
+			wm.JavascriptExecutorClick(driver, gmr.TokenConfimationOkBtn);Thread.sleep(2000);
+			
+			//-------------------------------Vehicle Token----------------------------------------------------------
+			//wm.JavascriptExecutorClick(driver, gmr.SBDetails);Thread.sleep(4000);//---------kadun takne
+			//wm.JavascriptExecutorClick(driver, gmr.VehicleToken);Thread.sleep(2000);
+			wm.JavascriptExecutorClick(driver, gmr.VehicleNumber);Thread.sleep(2000);
+			wm.JavascriptExecutorClick(driver, gmr.VehicleNumber);Thread.sleep(2000);
+			gmr.VehicleNumber.sendKeys("23456");
+			wm.JavascriptExecutorClick(driver, gmr.DriverLicenseNo);Thread.sleep(2000);
+			gmr.DriverLicenseNo.sendKeys("MH12-3036");
+			wm.JavascriptExecutorClick(driver, gmr.DriverName);Thread.sleep(2000);
+			gmr.DriverName.sendKeys("Jordhen");
+			wm.JavascriptExecutorClick(driver, gmr.DriverMobileNo);Thread.sleep(2000);
+			gmr.DriverMobileNo.sendKeys(cm.RandomNo(10));
+			wm.JavascriptExecutorClick(driver, gmr.AgentMobileNo);Thread.sleep(2000);
+			gmr.AgentMobileNo.sendKeys(cm.RandomNo(10));
+			wm.JavascriptExecutorClick(driver, gmr.GenerateToken);Thread.sleep(2000);
+			wm.JavascriptExecutorClick(driver, gmr.VehicleTokenConfimationOkBtn);Thread.sleep(2000);
+			
+			
+			
+			
+			//-----------------------------------Cons AWB List------------------
+			
+			wm.JavascriptExecutorClick(driver, gmr.ConsAWBList);Thread.sleep(2000);
+			
+			driver.switchTo().frame("IframEdocket");
+			Thread.sleep(1000);
+			
+			wm.JavascriptExecutorClick(driver, gmr.MenifestToAirlineEmail);Thread.sleep(2000);
+			gmr.MenifestToAirlineEmail.sendKeys("Swaranjali.Kharat@Kalelogistics.com");Thread.sleep(2000);
+			
+			wm.JavascriptExecutorClick(driver, gmr.SendEmailBtn);Thread.sleep(2000);
+			
+			wm.JavascriptExecutorClick(driver, gmr.SendEmailCloseBtn);Thread.sleep(2000);
+			driver.switchTo().defaultContent();
+			Thread.sleep(4000);
+		
+		//------------------------------------------ACS Receipt-------------------------------------------
+		wm.JavascriptExecutorClick(driver, gmr.ACSReceipt);Thread.sleep(1000);
+		
+		Set<String> allwindowid = driver.getWindowHandles();
+	    Object[] windows = allwindowid.toArray();
+	    String window2 = windows[0].toString();        
+	    driver.switchTo().window(window2); 
+	    System.out.println(allwindowid);
+	    System.out.println(window2);
+	    Thread.sleep(5000);
+	    
+	    String window1 = windows[0].toString();
+	    driver.switchTo().window(window1);
+	    System.out.println(window1);
+	    Thread.sleep(5000);
+
+
+		
+		//---------------------------------------------Action-----------------------------------------------
+	    
+	   // wm.JavascriptExecutorClick(driver, gmr.EditMAWBActionTab);Thread.sleep(2000);
+	    
+	    //wm.JavascriptExecutorClick(driver, gmr.EditMAWBActionTabSave);Thread.sleep(2000);
+	    
+	    //wm.JavascriptExecutorClick(driver, gmr.EditMAWBActionTabSavePopup);Thread.sleep(2000);
+		
+		wm.JavascriptExecutorClick(driver, gmr.ActionTab);Thread.sleep(2000);
+		wm.JavascriptExecutorClick(driver, gmr.CopyAWBConfirmationYesBtnQuickASI);
+		Thread.sleep(20000);
+		
+		Thread.sleep(700000);
+		
+	
 				
 }
 }
